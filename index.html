@@ -155,15 +155,7 @@
         </button>
       </nav>
 
-      <!-- BRAND MODULE RIBBON MINI -->
-      <div class="hidden xl:flex items-center gap-1.5 text-[10px] font-extrabold uppercase">
-        <span class="px-2 py-0.5 rounded brand-pill-m1">Innovación</span>
-        <span class="px-2 py-0.5 rounded brand-pill-m2">Diseño</span>
-        <span class="px-2 py-0.5 rounded brand-pill-m3">Digital</span>
-        <span class="px-2 py-0.5 rounded brand-pill-m4">Circular</span>
-        <span class="px-2 py-0.5 rounded brand-pill-m5">Liderazgo</span>
-        <span class="px-2 py-0.5 rounded brand-pill-m6">Tecnología</span>
-      </div>
+
 
     </div>
   </section>
@@ -176,71 +168,115 @@
     <!-- ======================================================== -->
     <div id="tab1Content" class="space-y-6">
 
-      <!-- HERO STATS (KPIS ESTRATÉGICOS) -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- HERO STATS (KPIS ESTRATÉGICOS CON EXPLICACIÓN Y TOOLTIPS) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
-        <!-- META CORFO COMPROMISO -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-6 -mt-6"></div>
+        <!-- KPI 1: META CORFO -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-6 -mt-6 pointer-events-none"></div>
           <div class="relative z-10">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Meta Corfo (≥24)</span>
-              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full">141.7% Cumplido</span>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full">141.7% Cumplido</span>
+                <div class="group relative cursor-pointer">
+                  <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 hover:text-emerald-700 transition"></i>
+                  <div class="absolute right-0 top-6 w-64 p-3 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 pointer-events-none">
+                    Compromiso formal Corfo Viraliza (Cód. 25VIRTL-307464) de capacitar a un mínimo de 24 estudiantes del Loa. Se logró una cobertura total de 34 participantes activos.
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="mt-2 flex items-baseline gap-2">
               <span class="text-3xl sm:text-4xl font-black text-emerald-700">34</span>
               <span class="text-xs font-bold text-slate-600">participantes</span>
             </div>
-            <p class="mt-2 text-xs text-slate-500 font-medium">
+            <p class="mt-1 text-xs text-emerald-800 font-semibold">
               23 AIEP preparatorios + 11 INACAP activos
             </p>
           </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 leading-tight relative z-10">
+            <strong>Explicación:</strong> Cobertura consolidada sobre la meta contractual de 24 alumnos exigida por el fondo Viraliza Formación.
+          </div>
         </div>
 
-        <!-- NPS SCORE -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-6 -mt-6"></div>
+        <!-- KPI 2: NPS SCORE -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-6 -mt-6 pointer-events-none"></div>
           <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">NPS Score Global</span>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">NPS Score Global</span>
+              <div class="group relative cursor-pointer">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 hover:text-[#C81057] transition"></i>
+                <div class="absolute right-0 top-6 w-64 p-3 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 pointer-events-none">
+                  Estándar Net Promoter Score: % Promotores (55%) menos % Detractores (10%). Puntuaciones >+30 representan el rango internacional de Excelencia.
+                </div>
+              </div>
+            </div>
             <div class="mt-2 flex items-baseline gap-2">
               <span class="text-3xl sm:text-4xl font-black text-[#C81057]">+45.0</span>
               <span class="text-xs font-bold text-rose-600">puntos</span>
             </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-700 font-bold">
+            <div class="mt-1 flex items-center gap-1.5 text-xs text-emerald-700 font-bold">
               <i data-lucide="award" class="w-4 h-4 text-emerald-600"></i>
               <span>Rango Excelencia (55% Promotores)</span>
             </div>
           </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 leading-tight relative z-10">
+            <strong>Explicación:</strong> Nivel de satisfacción y recomendación de los estudiantes. 55% promotores, 35% pasivos y 10% detractores.
+          </div>
         </div>
 
-        <!-- SALTO COGNITIVO -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-bl-full -mr-6 -mt-6"></div>
+        <!-- KPI 3: SALTO COGNITIVO -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-bl-full -mr-6 -mt-6 pointer-events-none"></div>
           <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Salto Cognitivo (Δ)</span>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Salto Cognitivo (Δ)</span>
+              <div class="group relative cursor-pointer">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 hover:text-amber-600 transition"></i>
+                <div class="absolute right-0 top-6 w-64 p-3 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 pointer-events-none">
+                  Ganancia neta en apropiación técnica: compara el autodiagnóstico previo (Ex-ante: 3.16/5.0) frente a la evaluación final (Ex-post: 4.41/5.0).
+                </div>
+              </div>
+            </div>
             <div class="mt-2 flex items-baseline gap-2">
               <span class="text-3xl sm:text-4xl font-black text-amber-600">+1.25</span>
               <span class="text-xs font-bold text-amber-700">pts (+39.6%)</span>
             </div>
-            <p class="mt-2 text-xs text-slate-500 font-medium">
+            <p class="mt-1 text-xs text-slate-600 font-medium">
               Línea base 3.16 ➔ Ex-post 4.41 / 5.0
             </p>
           </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 leading-tight relative z-10">
+            <strong>Explicación:</strong> Crecimiento real en competencias de transición verde y digital a lo largo de los 7 módulos del programa.
+          </div>
         </div>
 
-        <!-- PROYECTOS PREMIADOS -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-6 -mt-6"></div>
+        <!-- KPI 4: PROYECTOS DESTACADOS -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-6 -mt-6 pointer-events-none"></div>
           <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Proyectos Destacados</span>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Proyectos Destacados</span>
+              <div class="group relative cursor-pointer">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-slate-400 hover:text-purple-700 transition"></i>
+                <div class="absolute right-0 top-6 w-64 p-3 bg-slate-900 text-white text-[11px] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 pointer-events-none">
+                  Iniciativas finalistas evaluadas por la comisión de jurados (Valentina Muñoz, Rodrigo Mérida, Cecilia Martínez) en base a impacto territorial y viabilidad.
+                </div>
+              </div>
+            </div>
             <div class="mt-2 flex items-baseline gap-2">
               <span class="text-3xl sm:text-4xl font-black text-purple-700">4</span>
               <span class="text-xs font-bold text-purple-600">equipos</span>
             </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-purple-700 font-bold">
+            <div class="mt-1 flex items-center gap-1.5 text-xs text-purple-700 font-bold">
               <i data-lucide="sparkles" class="w-4 h-4"></i>
               <span>Con Incentivos de Impulso</span>
             </div>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 leading-tight relative z-10">
+            <strong>Explicación:</strong> Soluciones territoriales defendidas en el Demoday (Ecoesmart, Recompost, TecnMin, Calama Reconstruye).
           </div>
         </div>
 
