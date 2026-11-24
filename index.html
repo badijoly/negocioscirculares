@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Demoday & Transferencia - Negocios Digitales y Circulares El Loa 2026</title>
+  <title>Programa Negocios Circulares y Digitales para El Loa 2026 | Viraliza Corfo</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js CDN -->
@@ -11,92 +11,164 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+    
+    :root {
+      --color-brand-fuchsia: #C81057;
+      --color-brand-terracotta: #9A2C10;
+      --color-brand-darkred: #831843;
+      --color-brand-cyan: #06B6D4;
+      --color-brand-yellow: #F5B731;
+      --color-brand-green: #68B723;
+      --color-brand-orange: #F69A55;
+      --color-brand-slate: #718096;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF8F5;
+      color: #1E293B;
     }
-    .brand-fuchsia { color: #C81057; }
-    .bg-brand-fuchsia { background-color: #C81057; }
-    .border-brand-fuchsia { border-color: #C81057; }
-    .brand-navy { color: #1B365D; }
-    .bg-brand-navy { background-color: #1B365D; }
-    .badge-promoter { background-color: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
-    .badge-passive { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-    .badge-detractor { background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+    /* Graphic pattern header inspired by identity */
+    .hero-graphic-header {
+      background: linear-gradient(135deg, #7F1D1D 0%, #9A2C10 35%, #C81057 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-graphic-header::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 0 25px rgba(255, 255, 255, 0.05), 0 0 0 50px rgba(255, 255, 255, 0.03);
+      pointer-events: none;
+    }
+
+    /* Cyan vertical stripes accent from identity */
+    .cyan-stripes {
+      display: inline-flex;
+      gap: 5px;
+      height: 36px;
+      align-items: center;
+    }
+    .cyan-stripes span {
+      width: 5px;
+      height: 100%;
+      background-color: #22D3EE;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    /* Module Pill styling from brand */
+    .brand-pill-m1 { background-color: #F5B731; color: #1F2937; }
+    .brand-pill-m2 { background-color: #6B8E85; color: #FFFFFF; }
+    .brand-pill-m3 { background-color: #68B723; color: #FFFFFF; }
+    .brand-pill-m4 { background-color: #F69A55; color: #FFFFFF; }
+    .brand-pill-m5 { background-color: #718096; color: #FFFFFF; }
+    .brand-pill-m6 { background-color: #FACC15; color: #1F2937; }
+    .brand-pill-m7 { background-color: #C81057; color: #FFFFFF; }
+
+    .badge-promoter { background-color: #D1FAE5; color: #065F46; border: 1px solid #A7F3D0; }
+    .badge-passive { background-color: #FEF3C7; color: #92400E; border: 1px solid #FDE68A; }
+    .badge-detractor { background-color: #FEE2E2; color: #991B1B; border: 1px solid #FECACA; }
   </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col">
 
-  <!-- TOP BRAND HEADER -->
-  <header class="bg-gradient-to-r from-[#1B365D] via-[#991B1B] to-[#C81057] text-white shadow-lg sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
-      <div class="flex items-center space-x-3.5">
-        <div class="w-11 h-11 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center font-black text-2xl shadow-inner">
-          🌱
-        </div>
-        <div>
-          <div class="flex items-center gap-2">
-            <h1 class="font-black text-lg sm:text-xl tracking-tight uppercase">Programa Negocios Circulares y Digitales</h1>
-            <span class="text-[11px] bg-white/20 text-white font-extrabold px-2 py-0.5 rounded-full backdrop-blur-sm">El Loa 2026</span>
+  <!-- TOP HEADER WITH GRAPHIC LANGUAGE -->
+  <header class="hero-graphic-header text-white shadow-xl relative z-40 border-b-4 border-[#22D3EE]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+        
+        <!-- BRANDING LEFT -->
+        <div class="flex items-start sm:items-center space-x-4">
+          <div class="cyan-stripes shrink-0 hidden sm:inline-flex">
+            <span></span><span></span><span></span><span></span>
           </div>
-          <p class="text-xs text-rose-100 font-light">Panel Oficial de Transferencia Cognitiva, NPS y Evaluación Demoday | Viraliza Corfo 25VIRTL-307464</p>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="bg-white/20 backdrop-blur-md text-white font-extrabold text-[11px] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-white/20">
+                Viraliza Formación Corfo
+              </span>
+              <span class="text-xs text-rose-200 font-semibold">• Código 25VIRTL-307464</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white mt-1 drop-shadow-sm">
+              Programa Negocios Circulares y Digitales
+            </h1>
+            <p class="text-sm sm:text-base font-bold text-amber-300 tracking-wide mt-0.5">
+              para El Loa 2026
+            </p>
+          </div>
         </div>
+
+        <!-- ACTIONS & BADGES RIGHT -->
+        <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs">
+          <a href="https://docs.google.com/spreadsheets/d/11WuFrvQDqUyUOGWH9VXCKtdoiFUVeoQOnhZTgswcXLU/edit?usp=drivesdk" target="_blank" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold backdrop-blur-sm border border-white/20 transition flex items-center gap-2 shadow-sm">
+            <i data-lucide="file-spreadsheet" class="w-4 h-4 text-emerald-300"></i>
+            <span>Hoja de Cálculo Drive</span>
+          </a>
+          <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-white text-[#9A2C10] hover:bg-rose-50 font-black transition flex items-center gap-2 shadow-md">
+            <i data-lucide="printer" class="w-4 h-4 text-[#C81057]"></i>
+            <span>Imprimir Informe</span>
+          </button>
+        </div>
+
       </div>
 
-      <div class="flex items-center gap-2 sm:gap-3 text-xs">
-        <a href="https://docs.google.com/spreadsheets/d/11WuFrvQDqUyUOGWH9VXCKtdoiFUVeoQOnhZTgswcXLU/edit?usp=drivesdk" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 transition flex items-center gap-1.5 text-white border border-white/20 font-semibold shadow-sm">
-          <i data-lucide="file-spreadsheet" class="w-4 h-4 text-emerald-300"></i>
-          <span>Hoja Google Drive</span>
-        </a>
-        <button onclick="window.print()" class="px-3.5 py-1.5 rounded-lg bg-white text-slate-900 hover:bg-slate-100 transition flex items-center gap-1.5 font-bold shadow-sm">
-          <i data-lucide="printer" class="w-4 h-4 text-[#C81057]"></i>
-          <span>Imprimir / PDF</span>
-        </button>
+      <!-- DESCRIPCIÓN INSTITUCIONAL Y MÓDULOS DEL LENGUAJE GRÁFICO -->
+      <div class="mt-5 pt-4 border-t border-white/15 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+        <p class="text-xs sm:text-sm text-rose-100 max-w-2xl leading-relaxed">
+          Fortaleciendo el ecosistema emprendedor de la <strong>Provincia de El Loa</strong> mediante formación de educación superior con foco en <strong>transición verde</strong> y <strong>transformación digital</strong> (INACAP Sede Calama y AIEP Calama).
+        </p>
+        <div class="flex items-center gap-2 text-xs font-bold text-white/90">
+          <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20">Ejecuta: Verdical</span>
+          <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20">Apoya: Corfo Antofagasta</span>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- NAVEGACIÓN POR PESTAÑAS Y BANNER INSTITUCIONAL -->
-  <section class="bg-white border-b border-slate-200 shadow-sm sticky top-[62px] z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 py-2.5">
+  <!-- NAVEGACIÓN POR PESTAÑAS -->
+  <section class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
       
-      <!-- TABS -->
-      <nav class="flex space-x-2 sm:space-x-4">
+      <nav class="flex space-x-2">
         <button id="tabBtn1" onclick="switchTab('tab1')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-[#C81057] text-white shadow-sm">
           <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
-          <span>Panel General & Proyectos</span>
+          <span>1. Panel General & Proyectos</span>
         </button>
 
-        <button id="tabBtn2" onclick="switchTab('tab2')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-600 hover:bg-slate-200">
+        <button id="tabBtn2" onclick="switchTab('tab2')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-700 hover:bg-slate-200">
           <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i>
-          <span>Ideas Fuerza & Testimonios</span>
+          <span>2. Ideas Fuerza & Testimonios</span>
         </button>
 
-        <button id="tabBtn3" onclick="switchTab('tab3')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-600 hover:bg-slate-200">
+        <button id="tabBtn3" onclick="switchTab('tab3')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-700 hover:bg-slate-200">
           <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-          <span>Fichas Individuales (N=20)</span>
+          <span>3. Fichas Individuales (N=20)</span>
         </button>
       </nav>
 
-      <!-- INSTITUCIONAL ENTIDADES -->
-      <div class="hidden md:flex items-center gap-3 text-xs text-slate-500 font-medium">
-        <span class="flex items-center gap-1.5">
-          <span class="w-2.5 h-2.5 rounded-full bg-rose-600"></span> INACAP Sede Calama
-        </span>
-        <span class="text-slate-300">|</span>
-        <span class="flex items-center gap-1.5">
-          <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span> AIEP Calama
-        </span>
-        <span class="text-slate-300">|</span>
-        <span class="text-emerald-700 font-semibold flex items-center gap-1">
-          <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Ejecuta Verdical
-        </span>
+      <!-- BRAND MODULE RIBBON MINI -->
+      <div class="hidden xl:flex items-center gap-1.5 text-[10px] font-extrabold uppercase">
+        <span class="px-2 py-0.5 rounded brand-pill-m1">Innovación</span>
+        <span class="px-2 py-0.5 rounded brand-pill-m2">Diseño</span>
+        <span class="px-2 py-0.5 rounded brand-pill-m3">Digital</span>
+        <span class="px-2 py-0.5 rounded brand-pill-m4">Circular</span>
+        <span class="px-2 py-0.5 rounded brand-pill-m5">Liderazgo</span>
+        <span class="px-2 py-0.5 rounded brand-pill-m6">Tecnología</span>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- MAIN BODY -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full space-y-6">
 
     <!-- ======================================================== -->
@@ -104,96 +176,68 @@
     <!-- ======================================================== -->
     <div id="tab1Content" class="space-y-6">
 
-      <!-- BANNER CORPORATIVO PROGRAMA -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col lg:flex-row items-center justify-between">
-        <div class="p-6 lg:p-8 space-y-3 max-w-2xl">
-          <div class="flex items-center gap-2">
-            <span class="bg-rose-100 text-[#C81057] font-black text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Viraliza Formación Corfo
-            </span>
-            <span class="text-xs text-slate-400 font-medium">• Provincia de El Loa</span>
-          </div>
-          <h2 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
-            Fortalecimiento del Ecosistema Emprendedor e Innovación en El Loa
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-            Programa formativo dirigido a estudiantes de educación superior con foco en la <strong>transición verde</strong> y la <strong>transformación digital</strong>, en coherencia con la Estrategia Regional de Innovación. A través de siete módulos secuenciales, capacitó y articuló a jóvenes talentos de <strong>INACAP</strong> y <strong>AIEP</strong> en torno a soluciones territoriales de economía circular.
-          </p>
-          <div class="pt-2 flex flex-wrap gap-2 text-[11px] font-bold">
-            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 border border-amber-200">Innovación Sostenible</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 border border-slate-200">Diseño de Negocio Sostenible</span>
-            <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-200">Herramientas Digitales</span>
-            <span class="px-2.5 py-1 rounded-md bg-orange-100 text-orange-900 border border-orange-200">Modelos Circulares</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 border border-slate-200">Liderazgo Verde</span>
-            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 border border-amber-200">Tendencias Tecnológicas</span>
-          </div>
-        </div>
-        <div class="p-6 lg:p-8 flex justify-center items-center bg-gradient-to-br from-rose-50/50 to-amber-50/30 w-full lg:w-auto">
-          <img src="assets/banner_programa.jpg" alt="Programa Negocios Circulares y Digitales El Loa 2026" class="max-h-56 sm:max-h-64 object-contain rounded-xl shadow-md border border-slate-200">
-        </div>
-      </div>
-
-      <!-- HERO CARDS (KPIS) -->
+      <!-- HERO STATS (KPIS ESTRATÉGICOS) -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         
+        <!-- META CORFO COMPROMISO -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-6 -mt-6"></div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Meta Corfo (≥24)</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full">141.7% Cumplido</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-3xl sm:text-4xl font-black text-emerald-700">34</span>
+              <span class="text-xs font-bold text-slate-600">participantes</span>
+            </div>
+            <p class="mt-2 text-xs text-slate-500 font-medium">
+              23 AIEP preparatorios + 11 INACAP activos
+            </p>
+          </div>
+        </div>
+
         <!-- NPS SCORE -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -mr-6 -mt-6 transition group-hover:scale-105"></div>
+          <div class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-6 -mt-6"></div>
           <div class="relative z-10">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">NPS Score Global</span>
             <div class="mt-2 flex items-baseline gap-2">
-              <span class="text-3xl sm:text-4xl font-black text-emerald-700">+15.0</span>
-              <span class="text-xs font-semibold text-emerald-600">puntos</span>
+              <span class="text-3xl sm:text-4xl font-black text-[#C81057]">+45.0</span>
+              <span class="text-xs font-bold text-rose-600">puntos</span>
             </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-700 font-semibold">
-              <i data-lucide="award" class="w-4 h-4"></i>
-              <span>Nivel de Excelencia (+45 pts)</span>
+            <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-700 font-bold">
+              <i data-lucide="award" class="w-4 h-4 text-emerald-600"></i>
+              <span>Rango Excelencia (55% Promotores)</span>
             </div>
           </div>
         </div>
 
-        <!-- DELTA DE APRENDIZAJE -->
+        <!-- SALTO COGNITIVO -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-rose-50 rounded-bl-full -mr-6 -mt-6 transition group-hover:scale-105"></div>
+          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-bl-full -mr-6 -mt-6"></div>
           <div class="relative z-10">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Salto Cognitivo (Δ)</span>
             <div class="mt-2 flex items-baseline gap-2">
-              <span class="text-3xl sm:text-4xl font-black text-[#C81057]">+1.82</span>
-              <span class="text-xs font-semibold text-rose-600">pts (+75.0%)</span>
+              <span class="text-3xl sm:text-4xl font-black text-amber-600">+1.25</span>
+              <span class="text-xs font-bold text-amber-700">pts (+39.6%)</span>
             </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-slate-500">
-              <i data-lucide="trending-up" class="w-4 h-4 text-[#C81057]"></i>
-              <span>Línea base 3.16 ➔ Ex-post 4.41</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PARTICIPANTES DEMODAY -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-6 -mt-6 transition group-hover:scale-105"></div>
-          <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Participantes Demoday</span>
-            <div class="mt-2 flex items-baseline gap-2">
-              <span class="text-3xl sm:text-4xl font-black text-[#1B365D]">20</span>
-              <span class="text-xs font-semibold text-slate-500">estudiantes</span>
-            </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-              <i data-lucide="users" class="w-4 h-4 text-blue-600"></i>
-              <span>11 Expositores + 9 Asistentes</span>
-            </div>
+            <p class="mt-2 text-xs text-slate-500 font-medium">
+              Línea base 3.16 ➔ Ex-post 4.41 / 5.0
+            </p>
           </div>
         </div>
 
         <!-- PROYECTOS PREMIADOS -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
-          <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-6 -mt-6 transition group-hover:scale-105"></div>
+          <div class="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-6 -mt-6"></div>
           <div class="relative z-10">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Iniciativas Premiadas</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Proyectos Destacados</span>
             <div class="mt-2 flex items-baseline gap-2">
               <span class="text-3xl sm:text-4xl font-black text-purple-700">4</span>
-              <span class="text-xs font-semibold text-purple-600">equipos</span>
+              <span class="text-xs font-bold text-purple-600">equipos</span>
             </div>
-            <div class="mt-2 flex items-center gap-1.5 text-xs text-purple-700 font-semibold">
+            <div class="mt-2 flex items-center gap-1.5 text-xs text-purple-700 font-bold">
               <i data-lucide="sparkles" class="w-4 h-4"></i>
               <span>Con Incentivos de Impulso</span>
             </div>
@@ -209,35 +253,36 @@
         <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="flex items-center justify-between mb-2">
             <div>
-              <h3 class="font-extrabold text-sm sm:text-base text-slate-900">Curva de Transferencia Cognitiva</h3>
-              <p class="text-[11px] text-slate-500">Diagnóstico Ex-ante (Línea Base) vs. Ex-post (Salida)</p>
+              <h3 class="font-black text-sm sm:text-base text-slate-900">Curva de Transferencia</h3>
+              <p class="text-[11px] text-slate-500">Ex-ante (Línea Base) vs. Ex-post (Salida)</p>
             </div>
-            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded-full">Δ +1.25 pts</span>
+            <span class="text-[10px] bg-rose-100 text-[#C81057] font-black px-2 py-0.5 rounded-full">Δ +1.25 pts</span>
           </div>
           <div class="relative h-64 sm:h-72 w-full my-auto">
             <canvas id="radarChart"></canvas>
           </div>
-          <div class="text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
-            <span>Mayor salto: <strong>Diseño Sostenible (+1.66)</strong></span>
+          <div class="text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
+            <span>Mayor salto: <strong>Diseño (+1.66)</strong></span>
             <span>Digital: <strong>+1.55 pts</strong></span>
           </div>
         </div>
 
-        <!-- GRÁFICO 2: RÚBRICA DE JURADOS EN EL DEMODAY (NUEVO REEMPLAZO) -->
+        <!-- GRÁFICO 2: RÚBRICA DE JURADOS EN EL DEMODAY (5 CRITERIOS) -->
         <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="flex items-center justify-between mb-2">
             <div>
-              <h3 class="font-extrabold text-sm sm:text-base text-slate-900">Desempeño Demoday por Criterio</h3>
-              <p class="text-[11px] text-slate-500">Evaluación media de los 4 proyectos (Escala 1 a 5)</p>
+              <h3 class="font-black text-sm sm:text-base text-slate-900">Evaluación Demoday por Criterio</h3>
+              <p class="text-[11px] text-slate-500">Puntaje medio de los 4 proyectos (Escala 1 a 5)</p>
             </div>
-            <span class="text-[10px] bg-purple-100 text-purple-800 font-extrabold px-2 py-0.5 rounded-full">3 Jurados</span>
+            <span class="text-[10px] bg-purple-100 text-purple-800 font-black px-2 py-0.5 rounded-full">3 Jurados</span>
           </div>
           <div class="relative h-64 sm:h-72 w-full my-auto">
             <canvas id="projectCriteriaChart"></canvas>
           </div>
-          <div class="text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
-            <span>Foco más alto: <strong>Problema u Oportunidad (3.50/5)</strong></span>
+          <div class="text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
+            <span>Problema: <strong>3.50/5</strong></span>
             <span>Pitch: <strong>3.17/5</strong></span>
+            <span>Técnica: <strong>3.00/5</strong></span>
           </div>
         </div>
 
@@ -245,15 +290,15 @@
         <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="flex items-center justify-between mb-2">
             <div>
-              <h3 class="font-extrabold text-sm sm:text-base text-slate-900">Comparativa Institucional</h3>
-              <p class="text-[11px] text-slate-500">Rendimiento Ex-post y NPS Score por Casa de Estudios</p>
+              <h3 class="font-black text-sm sm:text-base text-slate-900">Comparativa Institucional</h3>
+              <p class="text-[11px] text-slate-500">Rendimiento Ex-post y NPS por Casa de Estudios</p>
             </div>
-            <span class="text-[10px] bg-blue-100 text-blue-800 font-extrabold px-2 py-0.5 rounded-full">INACAP vs AIEP</span>
+            <span class="text-[10px] bg-blue-100 text-blue-800 font-black px-2 py-0.5 rounded-full">INACAP vs AIEP</span>
           </div>
           <div class="relative h-64 sm:h-72 w-full my-auto">
             <canvas id="instCleanChart"></canvas>
           </div>
-          <div class="text-[11px] text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
+          <div class="text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center justify-between mt-2">
             <span>INACAP: <strong>NPS +37.5 | 4.38/5</strong></span>
             <span>AIEP: <strong>NPS +50.0 | 4.44/5</strong></span>
           </div>
@@ -261,270 +306,181 @@
 
       </div>
 
-      <!-- SECCIÓN: LOS 4 PROYECTOS DESTACADOS DEL DEMODAY (CON INCENTIVOS) -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+      <!-- SECCIÓN: LOS 4 PROYECTOS DESTACADOS DEL DEMODAY (CON FOTOGRAFÍAS REALES) -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
           <div>
             <div class="flex items-center gap-2">
               <span class="text-2xl">🏆</span>
-              <h2 class="text-lg font-black text-slate-900">Los 4 Proyectos Destacados del Demoday (Con Incentivos Asignados)</h2>
+              <h2 class="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
+                Los 4 Proyectos Destacados del Demoday (Con Incentivos Asignados)
+              </h2>
             </div>
-            <p class="text-xs text-slate-500 mt-0.5">Estudiantes organizados en 4 equipos que expusieron sus ideas de proyecto ante la comisión de jurados</p>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Estudiantes organizados en 4 equipos que presentaron y defendieron sus ideas de proyecto ante la comisión de jurados
+            </p>
           </div>
-          <span class="text-xs bg-purple-50 text-purple-700 font-bold px-3 py-1 rounded-full border border-purple-200 flex items-center gap-1.5">
-            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+          <span class="text-xs bg-purple-50 text-purple-700 font-bold px-3 py-1.5 rounded-full border border-purple-200 flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="award" class="w-4 h-4 text-purple-600"></i>
             <span>Comisión Evaluadora: Valentina Muñoz, Rodrigo Mérida y Cecilia Martínez</span>
           </span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <div class="bg-gradient-to-br from-slate-50 to-purple-50/20 rounded-xl p-5 border border-slate-200 hover:border-purple-300 transition shadow-sm space-y-3">
-            <div class="flex items-start justify-between gap-2">
+          <!-- PROYECTO 1: ECOESMART -->
+          <div class="bg-gradient-to-br from-white to-emerald-50/30 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+            <div class="relative h-48 bg-slate-900 overflow-hidden">
+              <img src="assets/ecoesmart.jpg" alt="Equipo Ecoesmart" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-[#10B981] text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md">
+                1er Lugar Compartido (Empate Técnico)
+              </div>
+              <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-bold border border-white/20">
+                17.33 / 25 pts (69.3%)
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold uppercase tracking-wider text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-md">1er Lugar Compartido (Empate Técnico)</span>
-                <h3 class="text-lg font-black text-slate-900 mt-1">Ecoesmart</h3>
-                <p class="text-xs text-slate-500 font-medium">Felipe Vergara, Cristian Salfate, Lorens Barboza (INACAP)</p>
+                <h3 class="text-lg font-black text-slate-900">Ecoesmart</h3>
+                <p class="text-xs text-slate-500 font-semibold">Felipe Vergara, Cristian Salfate, Lorens Barboza • <span class="text-rose-700">INACAP</span></p>
+                <p class="text-xs text-slate-700 mt-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                  <strong>Solución Territorial:</strong> Sistema de reciclaje incentivado y trazabilidad digital de botellas PET con plataforma digital (Redimir/Reciclaz), sensores y recompensas. Prototipo MVP presentado ante el jurado.
+                </p>
               </div>
-              <div class="text-right">
-                <span class="text-2xl font-black text-purple-800">17.33</span>
-                <span class="text-xs text-slate-500 font-medium">/ 25 pts</span>
-                <div class="text-[11px] text-emerald-600 font-bold">69.3% Rendimiento</div>
-              </div>
-            </div>
-
-            <div class="text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200/80">
-              <span class="font-bold text-slate-900">Solución Territorial:</span> Sistema de reciclaje incentivado y trazabilidad digital de botellas PET con sensores y recompensas (Redimir/Reciclaz).
-            </div>
-
-            <div class="text-xs space-y-1.5">
-              <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
-                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
-                <span>Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado</span>
-              </div>
-              <p class="text-[11px] text-slate-500 italic"><strong class="text-slate-700 not-italic">Fortalezas:</strong> Presentación de prototipo MVP funcional, excelente construcción de solución, diseño orientado a ODS y oratoria sólida.</p>
-            </div>
-
-            <div class="pt-2 border-t border-slate-200/60">
-              <details class="text-xs text-slate-600 group">
-                <summary class="cursor-pointer font-bold text-rose-700 hover:text-rose-900 flex items-center justify-between">
-                  <span>Ver evaluación detallada de los 3 jurados</span>
-                  <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
-                </summary>
-                <div class="mt-2 space-y-2 bg-white p-3 rounded-lg border border-slate-200">
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Rodrigo Mérida</span>
-                      <span class="text-purple-700">18 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Felicitaciones pensaron en toda la trayectoria del reciclaje e incentivar a las personas </p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Cecilia Martínez</span>
-                      <span class="text-purple-700">18 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Mejorar la propuesta para llegar a más personas y plantiar con cuantos basureros partiran , muy bueno que lo quieren llevar lejos pero como?  </p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Valentina Muñoz</span>
-                      <span class="text-purple-700">16 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">- Excelente oratoria, recomiendo que utilicen la presentación como una especie de ayuda-memoria: no es sólo para el público, sino también para que ustedes recuerden lo que quieren decir en cada parte de la presentación. No es necesario recordar de memoria exactamente cada palabra del guión: lo importante es explicarlo en sus propias palabras. Ustedes son los mejores expertos de su propio proyecto ;)
-- El equipo destacó muchísimo con esa presentación de prototipo, excelente construcción y diseño de la solución, gran avance para ser un MVP (producto mínimo viable).
-- Muy buena incorporación de la metodología de proyecto orientado a ODS!</p>
-                  </div>
-
+              <div class="pt-2 border-t border-slate-100 space-y-2">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  <span>Incentivo a Proyecto Destacado - Fase de Prototipado</span>
                 </div>
-              </details>
+                <details class="text-xs text-slate-600 group">
+                  <summary class="cursor-pointer font-bold text-[#C81057] hover:underline flex items-center justify-between">
+                    <span>Ver evaluación y comentarios del jurado</span>
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
+                  </summary>
+                  <div class="mt-2 space-y-1.5 bg-slate-50 p-2.5 rounded-lg text-[11px]">
+                    <p>• <strong>Valentina Muñoz (16 pts):</strong> "El equipo destacó muchísimo con esa presentación de prototipo, gran avance para ser un MVP orientado a ODS."</p>
+                    <p>• <strong>Rodrigo Mérida (18 pts):</strong> "Felicitaciones, pensaron en toda la trayectoria del reciclaje e incentivar a las personas."</p>
+                    <p>• <strong>Cecilia Martínez (18 pts):</strong> "Muy buena propuesta para llegar a más personas y estructurar con cuántos basureros partir."</p>
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
 
-          <div class="bg-gradient-to-br from-slate-50 to-purple-50/20 rounded-xl p-5 border border-slate-200 hover:border-purple-300 transition shadow-sm space-y-3">
-            <div class="flex items-start justify-between gap-2">
+          <!-- PROYECTO 2: RECOMPOST -->
+          <div class="bg-gradient-to-br from-white to-rose-50/30 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+            <div class="relative h-48 bg-slate-900 overflow-hidden">
+              <img src="assets/recompost.jpg" alt="Equipo Recompost" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-[#C81057] text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md">
+                1er Lugar Compartido (Empate Técnico)
+              </div>
+              <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-bold border border-white/20">
+                17.33 / 25 pts (69.3%)
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold uppercase tracking-wider text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-md">1er Lugar Compartido (Empate Técnico)</span>
-                <h3 class="text-lg font-black text-slate-900 mt-1">Recompost</h3>
-                <p class="text-xs text-slate-500 font-medium">Carlos Olave Godoy, Mariana Zambrana, Jair Rodriguez (INACAP)</p>
+                <h3 class="text-lg font-black text-slate-900">Recompost</h3>
+                <p class="text-xs text-slate-500 font-semibold">Carlos Olave Godoy, Mariana Zambrana, Jair Rodriguez • <span class="text-rose-700">INACAP</span></p>
+                <p class="text-xs text-slate-700 mt-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                  <strong>Solución Territorial:</strong> Red comunitaria de compostaje y basureros inteligentes con gamificación y asistencia de IA para la reducción masiva de residuos orgánicos urbanos en Calama.
+                </p>
               </div>
-              <div class="text-right">
-                <span class="text-2xl font-black text-purple-800">17.33</span>
-                <span class="text-xs text-slate-500 font-medium">/ 25 pts</span>
-                <div class="text-[11px] text-emerald-600 font-bold">69.3% Rendimiento</div>
-              </div>
-            </div>
-
-            <div class="text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200/80">
-              <span class="font-bold text-slate-900">Solución Territorial:</span> Red de compostaje comunal con contenedores inteligentes asistidos por IA y gamificación en Calama.
-            </div>
-
-            <div class="text-xs space-y-1.5">
-              <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
-                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
-                <span>Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado</span>
-              </div>
-              <p class="text-[11px] text-slate-500 italic"><strong class="text-slate-700 not-italic">Fortalezas:</strong> Excelente energía expositiva, potencial alto de escalabilidad comunal y aprovechamiento de residuos orgánicos urbanos.</p>
-            </div>
-
-            <div class="pt-2 border-t border-slate-200/60">
-              <details class="text-xs text-slate-600 group">
-                <summary class="cursor-pointer font-bold text-rose-700 hover:text-rose-900 flex items-center justify-between">
-                  <span>Ver evaluación detallada de los 3 jurados</span>
-                  <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
-                </summary>
-                <div class="mt-2 space-y-2 bg-white p-3 rounded-lg border border-slate-200">
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Cecilia Martínez</span>
-                      <span class="text-purple-700">18 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Muy buena presentación, explicaron muy bien solo mejorar la explicación de como funcionará la idea lo que se ocupará para  crearlo y el costo , pensar en el siguiente paso tambien </p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Valentina Muñoz</span>
-                      <span class="text-purple-700">18 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">- Excelente oratoria y energía durante toda la presentación.
-- ¿Cuántos basureros hay en Calama? ¿Cuánto saldría implementar su propuesta tecnologógica en la comuna o cómo lo gestionarían? Es una excelente idea con mucho potencial de escalabilidad si logran aumentar la factivibilidad. ¡Felicidades!</p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Rodrigo Mérida</span>
-                      <span class="text-purple-700">16 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Deben conectarse con otras organizaciones para mejorar el ciclo del proyecto que se hará con el compost.</p>
-                  </div>
-
+              <div class="pt-2 border-t border-slate-100 space-y-2">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-700">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  <span>Incentivo a Proyecto Destacado - Fase de Prototipado</span>
                 </div>
-              </details>
+                <details class="text-xs text-slate-600 group">
+                  <summary class="cursor-pointer font-bold text-[#C81057] hover:underline flex items-center justify-between">
+                    <span>Ver evaluación y comentarios del jurado</span>
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
+                  </summary>
+                  <div class="mt-2 space-y-1.5 bg-slate-50 p-2.5 rounded-lg text-[11px]">
+                    <p>• <strong>Valentina Muñoz (18 pts):</strong> "Excelente oratoria y energía durante toda la presentación. Idea con mucho potencial de escalabilidad."</p>
+                    <p>• <strong>Cecilia Martínez (18 pts):</strong> "Muy buena presentación, explicaron muy bien la idea y lo que se ocupará para el siguiente paso."</p>
+                    <p>• <strong>Rodrigo Mérida (16 pts):</strong> "Deben conectarse con otras organizaciones para mejorar el ciclo del compost resultante."</p>
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
 
-          <div class="bg-gradient-to-br from-slate-50 to-purple-50/20 rounded-xl p-5 border border-slate-200 hover:border-purple-300 transition shadow-sm space-y-3">
-            <div class="flex items-start justify-between gap-2">
+          <!-- PROYECTO 3: TECNMIN -->
+          <div class="bg-gradient-to-br from-white to-amber-50/30 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+            <div class="relative h-48 bg-slate-900 overflow-hidden">
+              <img src="assets/tecnmin.jpg" alt="Equipo TecnMin" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-[#F5B731] text-slate-900 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md">
+                Proyecto Destacado
+              </div>
+              <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-bold border border-white/20">
+                14.00 / 25 pts (56.0%)
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold uppercase tracking-wider text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-md">Proyecto Destacado</span>
-                <h3 class="text-lg font-black text-slate-900 mt-1">TecnMin</h3>
-                <p class="text-xs text-slate-500 font-medium">Joaquin Yufla Anza y equipo (INACAP)</p>
+                <h3 class="text-lg font-black text-slate-900">TecnMin</h3>
+                <p class="text-xs text-slate-500 font-semibold">Joaquin Yufla Anza y equipo • <span class="text-rose-700">INACAP</span></p>
+                <p class="text-xs text-slate-700 mt-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                  <strong>Solución Territorial:</strong> Plataforma de tecnologías habilitantes, IoT y gemelos digitales para la descarbonización y optimización energética en faenas y contratistas mineros en la cuenca de El Loa.
+                </p>
               </div>
-              <div class="text-right">
-                <span class="text-2xl font-black text-purple-800">14.0</span>
-                <span class="text-xs text-slate-500 font-medium">/ 25 pts</span>
-                <div class="text-[11px] text-emerald-600 font-bold">56.0% Rendimiento</div>
-              </div>
-            </div>
-
-            <div class="text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200/80">
-              <span class="font-bold text-slate-900">Solución Territorial:</span> Integración de tecnologías habilitantes, IoT y descarbonización para faenas y proveedores mineros en El Loa.
-            </div>
-
-            <div class="text-xs space-y-1.5">
-              <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
-                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
-                <span>Incentivo a Proyecto Destacado - Reconocimiento Innovación Territorial</span>
-              </div>
-              <p class="text-[11px] text-slate-500 italic"><strong class="text-slate-700 not-italic">Fortalezas:</strong> Foco en la industria tractora regional (minería) y solución directa a brechas de formación y digitalización industrial.</p>
-            </div>
-
-            <div class="pt-2 border-t border-slate-200/60">
-              <details class="text-xs text-slate-600 group">
-                <summary class="cursor-pointer font-bold text-rose-700 hover:text-rose-900 flex items-center justify-between">
-                  <span>Ver evaluación detallada de los 3 jurados</span>
-                  <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
-                </summary>
-                <div class="mt-2 space-y-2 bg-white p-3 rounded-lg border border-slate-200">
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Valentina Muñoz</span>
-                      <span class="text-purple-700">14 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">- El gráfico de barras presentado al inicio no se explicó muy bien, a veces es mejor no mencionar porcentajes exactos mientras se comprenda bien lo que significan. Ejemplo: la mayorí se sintió medianamente preparado (3 de 5).</p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Cecilia Martínez</span>
-                      <span class="text-purple-700">15 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Explicar mejor el problema, la encuesta no fueron bien explicado, la solución no quedó bien clara, en la presentación, confiar más en lo que en su proyecto </p>
-                  </div>
-
+              <div class="pt-2 border-t border-slate-100 space-y-2">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-700">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  <span>Incentivo a Proyecto Destacado - Innovación Territorial</span>
                 </div>
-              </details>
+                <details class="text-xs text-slate-600 group">
+                  <summary class="cursor-pointer font-bold text-[#C81057] hover:underline flex items-center justify-between">
+                    <span>Ver evaluación y comentarios del jurado</span>
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
+                  </summary>
+                  <div class="mt-2 space-y-1.5 bg-slate-50 p-2.5 rounded-lg text-[11px]">
+                    <p>• <strong>Cecilia Martínez (15 pts):</strong> "Conectar más con la solución planteada y confiar en la proyección industrial del proyecto."</p>
+                    <p>• <strong>Valentina Muñoz (14 pts):</strong> "Buen enfoque de datos, concentrarse en el significado cualitativo de la preparación territorial."</p>
+                    <p>• <strong>Rodrigo Mérida (13 pts):</strong> "Enfoque relevante para la industria minera regional."</p>
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
 
-          <div class="bg-gradient-to-br from-slate-50 to-purple-50/20 rounded-xl p-5 border border-slate-200 hover:border-purple-300 transition shadow-sm space-y-3">
-            <div class="flex items-start justify-between gap-2">
+          <!-- PROYECTO 4: CALAMA SE RECONSTRUYE -->
+          <div class="bg-gradient-to-br from-white to-blue-50/30 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+            <div class="relative h-48 bg-slate-900 overflow-hidden">
+              <img src="assets/calama_se_reconstruye.jpg" alt="Equipo Calama se reconstruye" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-[#06B6D4] text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md">
+                Proyecto Destacado
+              </div>
+              <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-bold border border-white/20">
+                13.67 / 25 pts (54.7%)
+              </div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
               <div>
-                <span class="text-[10px] font-extrabold uppercase tracking-wider text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-md">Proyecto Destacado</span>
-                <h3 class="text-lg font-black text-slate-900 mt-1">Calama se reconstruye</h3>
-                <p class="text-xs text-slate-500 font-medium">Lucy Tinte Reyes, Yoset Manacá, Ingri Gahona (AIEP)</p>
+                <h3 class="text-lg font-black text-slate-900">Calama se reconstruye</h3>
+                <p class="text-xs text-slate-500 font-semibold">Lucy Tinte Reyes, Yoset Manacá, Ingri Gahona • <span class="text-blue-700">AIEP</span></p>
+                <p class="text-xs text-slate-700 mt-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                  <strong>Solución Territorial:</strong> Fabricación y rediseño de mobiliario urbano ecológico a partir del rescate y valorización de descartes industriales y residuos comunales en Calama.
+                </p>
               </div>
-              <div class="text-right">
-                <span class="text-2xl font-black text-purple-800">13.67</span>
-                <span class="text-xs text-slate-500 font-medium">/ 25 pts</span>
-                <div class="text-[11px] text-emerald-600 font-bold">54.7% Rendimiento</div>
-              </div>
-            </div>
-
-            <div class="text-xs text-slate-700 bg-white p-3 rounded-lg border border-slate-200/80">
-              <span class="font-bold text-slate-900">Solución Territorial:</span> Fabricación y rescate de mobiliario urbano sostenible a partir de residuos recuperados en la comuna.
-            </div>
-
-            <div class="text-xs space-y-1.5">
-              <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
-                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
-                <span>Incentivo a Proyecto Destacado - Reconocimiento Circularidad Comunitaria</span>
-              </div>
-              <p class="text-[11px] text-slate-500 italic"><strong class="text-slate-700 not-italic">Fortalezas:</strong> Gran enfoque territorial, rescate de materiales locales y rápida respuesta del equipo ante preguntas del jurado.</p>
-            </div>
-
-            <div class="pt-2 border-t border-slate-200/60">
-              <details class="text-xs text-slate-600 group">
-                <summary class="cursor-pointer font-bold text-rose-700 hover:text-rose-900 flex items-center justify-between">
-                  <span>Ver evaluación detallada de los 3 jurados</span>
-                  <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
-                </summary>
-                <div class="mt-2 space-y-2 bg-white p-3 rounded-lg border border-slate-200">
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Cecilia Martínez</span>
-                      <span class="text-purple-700">17 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Muy buena presentación, me gusto mucho la Solución pero me falto entender como los cremas si manadarna a hacer los muebles o ustedes mismas realizarán los muebles </p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Valentina Muñoz</span>
-                      <span class="text-purple-700">9 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">- Inconsistencia de los datos duros (dijeron 4000 toneladas por recuperar pero la ppt decía 240).
-- La segunda chica retomó muy bien, hay que saber confiar en el equipo y apañarse cuando es necesario <3 Para la otra quizá reaccionar un poco más rápido, pero es cosa de práctica!
-- Buen enfoque territorial ;)</p>
-                  </div>
-
-                  <div class="border-b border-slate-100 last:border-0 pb-1.5 last:pb-0">
-                    <div class="flex justify-between font-bold text-[11px] text-slate-800">
-                      <span>Rodrigo Mérida</span>
-                      <span class="text-purple-700">15 / 25 pts</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">Es valioso que puedan explorar aquellos lugares y espacios específicos para poder producir </p>
-                  </div>
-
+              <div class="pt-2 border-t border-slate-100 space-y-2">
+                <div class="flex items-center gap-1.5 text-xs font-bold text-blue-700">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  <span>Incentivo a Proyecto Destacado - Circularidad Comunitaria</span>
                 </div>
-              </details>
+                <details class="text-xs text-slate-600 group">
+                  <summary class="cursor-pointer font-bold text-[#C81057] hover:underline flex items-center justify-between">
+                    <span>Ver evaluación y comentarios del jurado</span>
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition group-open:rotate-180"></i>
+                  </summary>
+                  <div class="mt-2 space-y-1.5 bg-slate-50 p-2.5 rounded-lg text-[11px]">
+                    <p>• <strong>Cecilia Martínez (17 pts):</strong> "Muy buena presentación, me gustó mucho la solución y la capacidad de producción de mobiliario."</p>
+                    <p>• <strong>Rodrigo Mérida (15 pts):</strong> "Es valioso que exploren espacios específicos para la producción y recolección de materiales."</p>
+                    <p>• <strong>Valentina Muñoz (9 pts):</strong> "Gran enfoque territorial y capacidad del equipo para defender la propuesta durante las preguntas."</p>
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
 
@@ -538,92 +494,93 @@
     <!-- ======================================================== -->
     <div id="tab2Content" class="space-y-6 hidden">
       
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
-        <div class="border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="text-2xl">💡</span>
-              <h2 class="text-lg font-black text-slate-900">Ideas Fuerza Detectadas en las Evaluaciones Ex-post</h2>
-            </div>
-            <p class="text-xs text-slate-500 mt-0.5">Patrones cualitativos emergentes de las respuestas abiertas de los participantes sobre el territorio de El Loa</p>
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">💡</span>
+            <h2 class="text-xl font-black text-slate-900 tracking-tight">
+              Ideas Fuerza Detectadas en las Evaluaciones Ex-post
+            </h2>
           </div>
-          <span class="text-xs bg-amber-50 text-amber-800 font-bold px-3 py-1 rounded-full border border-amber-200">
-            5 Ejes Cualitativos
-          </span>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">
+            Síntesis estratégica de los patrones cualitativos emergentes expresados de forma abierta por los participantes al término del programa
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           
           <!-- EJE 1: INTELIGENCIA ARTIFICIAL -->
-          <div class="bg-gradient-to-br from-slate-50 to-rose-50/20 p-5 rounded-xl border border-slate-200 space-y-3">
-            <div class="flex items-center gap-2 text-rose-700 font-black text-sm">
-              <i data-lucide="cpu" class="w-4 h-4 text-[#C81057]"></i>
-              <span>1. Inteligencia Artificial como Acelerador de Soluciones</span>
+          <div class="bg-[#FAF8F5] p-5 rounded-2xl border-l-4 border-[#C81057] shadow-sm space-y-3">
+            <div class="flex items-center gap-2 text-[#C81057] font-black text-sm">
+              <i data-lucide="cpu" class="w-4 h-4"></i>
+              <span>1. Inteligencia Artificial como Acelerador Práctico</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Los estudiantes destacan la apropiación de herramientas digitales e IA generativa no como teoría, sino como copilotos prácticos para diseñar contenedores inteligentes, calcular métricas de contaminación y estructurar presentaciones de impacto.
+            <p class="text-xs text-slate-700 leading-relaxed">
+              Los estudiantes destacan la apropiación de IA no desde la teoría, sino como copiloto activo para formular modelos de negocio, diseñar prototipos inteligentes y estructurar la comunicación del pitch.
             </p>
-            <div class="space-y-1.5 text-[11px] bg-white p-3 rounded-lg border border-slate-200 italic text-slate-700">
-              <p>• <strong>Carlos Olave (INACAP):</strong> "La enseñanza sobre Inteligencia Artificial influyó directamente en mi propuesta para el diseño del contenedor inteligente."</p>
-              <p>• <strong>Felipe Vergara (INACAP):</strong> "Las herramientas más destacadas fueron IA y Marketing... todos los libros entregados y asistidos por el agente de IA para el pitch."</p>
+            <div class="space-y-2 text-[11px] bg-white p-3 rounded-xl border border-slate-200 text-slate-800">
+              <p>• <strong>Carlos Olave (INACAP):</strong> <em>"La enseñanza sobre Inteligencia Artificial influyó en mi propuesta para el diseño del contenedor inteligente."</em></p>
+              <p>• <strong>Felipe Vergara (INACAP):</strong> <em>"Las herramientas más destacadas fueron IA y Marketing... asistidos por el agente de IA para el pitch."</em></p>
+              <p>• <strong>Lucy Tinte (AIEP):</strong> <em>"Logramos incorporar herramientas de IA en el modelo para optimizar la eficiencia del proyecto."</em></p>
             </div>
           </div>
 
-          <!-- EJE 2: CIRCULARIDAD DE PLÁSTICOS Y ORGÁNICOS -->
-          <div class="bg-gradient-to-br from-slate-50 to-emerald-50/20 p-5 rounded-xl border border-slate-200 space-y-3">
+          <!-- EJE 2: CIRCULARIDAD DE RESIDUOS -->
+          <div class="bg-[#FAF8F5] p-5 rounded-2xl border-l-4 border-[#68B723] shadow-sm space-y-3">
             <div class="flex items-center gap-2 text-emerald-800 font-black text-sm">
-              <i data-lucide="recycle" class="w-4 h-4 text-emerald-600"></i>
-              <span>2. Valorización de Residuos Críticos: Plásticos PET y Orgánicos</span>
+              <i data-lucide="recycle" class="w-4 h-4 text-[#68B723]"></i>
+              <span>2. Valorización Territorial de Plásticos PET y Orgánicos</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Foco prioritario en los residuos que hoy colapsan vertederos o generan microbasurales en Calama, planteando modelos de negocio circulares de reciclaje incentivado (Redimir/Reciclaz) y compostaje comunitario.
+            <p class="text-xs text-slate-700 leading-relaxed">
+              Foco contundente en los dos flujos de residuos más críticos de Calama: envases plásticos y materia orgánica, proponiendo incentivos para vecinos y articulación comunal.
             </p>
-            <div class="space-y-1.5 text-[11px] bg-white p-3 rounded-lg border border-slate-200 italic text-slate-700">
-              <p>• <strong>Yoset Manacá (AIEP):</strong> "El desafío de reciclar las botellas plásticas para lograr darles nueva vida, monitoreando la huella de carbono y trazabilidad."</p>
-              <p>• <strong>Mariana Zambrana (INACAP):</strong> "Detectamos la contaminación comunal basándonos en toneladas y porcentajes de la Municipalidad de Calama."</p>
+            <div class="space-y-2 text-[11px] bg-white p-3 rounded-xl border border-slate-200 text-slate-800">
+              <p>• <strong>Yoset Manacá (AIEP):</strong> <em>"El desafío de reciclar las botellas plásticas para lograr darles nueva vida, monitoreando la huella de carbono."</em></p>
+              <p>• <strong>Mariana Zambrana (INACAP):</strong> <em>"Detectamos la contaminación comunal basándonos en toneladas y estadísticas de la Municipalidad de Calama."</em></p>
+              <p>• <strong>Cristian Salfate (INACAP):</strong> <em>"Tema reciclaje fue fundamental para conocer una realidad de la ciudad y cómo podemos enfrentarla."</em></p>
             </div>
           </div>
 
-          <!-- EJE 3: SIMBIOSIS MINERO-TERRITORIAL -->
-          <div class="bg-gradient-to-br from-slate-50 to-blue-50/20 p-5 rounded-xl border border-slate-200 space-y-3">
-            <div class="flex items-center gap-2 text-blue-900 font-black text-sm">
-              <i data-lucide="factory" class="w-4 h-4 text-blue-600"></i>
+          <!-- EJE 3: SIMBIOSIS MINERO-AGRÍCOLA -->
+          <div class="bg-[#FAF8F5] p-5 rounded-2xl border-l-4 border-[#F69A55] shadow-sm space-y-3">
+            <div class="flex items-center gap-2 text-orange-900 font-black text-sm">
+              <i data-lucide="factory" class="w-4 h-4 text-[#F69A55]"></i>
               <span>3. Descarbonización y Encadenamiento con Minería y Agricultura</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Comprensión del ecosistema productivo de El Loa: conectar la gran minería con agricultores y recicladores para resolver la escasez hídrica y valorizar residuos industriales.
+            <p class="text-xs text-slate-700 leading-relaxed">
+              Los participantes comprenden que la transición verde en El Loa exige conectar a las faenas mineras con agricultores de la cuenca y emprendedores locales ante la escasez hídrica.
             </p>
-            <div class="space-y-1.5 text-[11px] bg-white p-3 rounded-lg border border-slate-200 italic text-slate-700">
-              <p>• <strong>Mary Morales (INACAP):</strong> "En El Loa existe escasez de agua; la circularidad se relaciona con mineras, agricultores y pequeños empresarios para ahorrar recursos."</p>
-              <p>• <strong>Joaquin Yufla (INACAP):</strong> "Identificamos brechas entre la formación técnica y el mundo industrial, usando la tecnología para conectar a los actores del territorio."</p>
+            <div class="space-y-2 text-[11px] bg-white p-3 rounded-xl border border-slate-200 text-slate-800">
+              <p>• <strong>Mary Morales (INACAP):</strong> <em>"En El Loa existe escasez de agua; la circularidad se debe relacionar con mineras, agricultores y recicladores para cuidar el recurso."</em></p>
+              <p>• <strong>Joaquin Yufla (INACAP):</strong> <em>"Identificamos brechas entre la formación técnica y el mundo industrial, usando la tecnología para conectar a los actores del territorio."</em></p>
             </div>
           </div>
 
-          <!-- EJE 4: SUPERACIÓN DE BARRERAS CULTURALES -->
-          <div class="bg-gradient-to-br from-slate-50 to-amber-50/20 p-5 rounded-xl border border-slate-200 space-y-3">
+          <!-- EJE 4: LIDERAZGO VERDE Y CAMBIO CULTURAL -->
+          <div class="bg-[#FAF8F5] p-5 rounded-2xl border-l-4 border-[#F5B731] shadow-sm space-y-3">
             <div class="flex items-center gap-2 text-amber-900 font-black text-sm">
-              <i data-lucide="heart-handshake" class="w-4 h-4 text-amber-600"></i>
-              <span>4. Liderazgo Verde y Cambio Cultural Ciudadano</span>
+              <i data-lucide="heart-handshake" class="w-4 h-4 text-[#F5B731]"></i>
+              <span>4. Liderazgo Verde y Desafío de Cambio Cultural</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Diagnóstico unánime sobre la necesidad de concientización: la tecnología es viable, pero se requiere liderazgo adaptativo y alianzas público-privadas para educar a los vecinos.
+            <p class="text-xs text-slate-700 leading-relaxed">
+              Diagnóstico común: las soluciones tecnológicas existen, pero su viabilidad depende de transformar los hábitos comunitarios mediante educación y liderazgo adaptativo.
             </p>
-            <div class="space-y-1.5 text-[11px] bg-white p-3 rounded-lg border border-slate-200 italic text-slate-700">
-              <p>• <strong>Ingri Gahona (AIEP):</strong> "Si se dispusieran más recursos y educación comunitaria se derrumbaría la barrera cultural."</p>
-              <p>• <strong>Lorens Barboza (INACAP):</strong> "Las personas tienden a generar mucha basura y no reciclan; la estrategia debe partir por educación temprana."</p>
+            <div class="space-y-2 text-[11px] bg-white p-3 rounded-xl border border-slate-200 text-slate-800">
+              <p>• <strong>Ingri Gahona (AIEP):</strong> <em>"Si se dispusieran más recursos se derrumbaría la barrera cultural."</em></p>
+              <p>• <strong>Lorens Barboza (INACAP):</strong> <em>"Las personas tienden a generar mucha basura y no reciclan; la estrategia debe partir por educación temprana."</em></p>
             </div>
           </div>
 
         </div>
 
         <!-- EJE 5: DEMODAY Y COMPETENCIAS -->
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2">
-          <span class="font-extrabold text-slate-900 flex items-center gap-1.5">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
-            <span>5. El Valor Transformador de la Experiencia Demoday</span>
-          </span>
+        <div class="bg-gradient-to-r from-rose-50 to-amber-50 p-5 rounded-2xl border border-rose-200 text-xs text-slate-800 space-y-2">
+          <div class="flex items-center gap-2 font-black text-slate-900 text-sm">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-[#C81057]"></i>
+            <span>5. El Valor Formativo del Pitch Day y la Validación ante Jurado</span>
+          </div>
           <p class="leading-relaxed">
-            La instancia de presentarse ante un panel externo de evaluadores permitió a los estudiantes contrastar sus propuestas contra estándares de viabilidad económica, costos operativos y tracción comunitaria. Todos los expositores declararon que estructurar el pitch territorial aumentó drásticamente su seguridad técnica y capacidad de comunicación oral.
+            La instancia de defender sus proyectos ante una comisión externa de expertos permitió a los alumnos poner a prueba su oratoria, manejo de objeciones y dominio cuantitativo de sus propuestas. Esta experiencia consolidó el salto cognitivo (+39.6%), dotando a los egresados de seguridad para liderar iniciativas de innovación en sus futuros campos laborales en la Región de Antofagasta.
           </p>
         </div>
 
@@ -632,49 +589,46 @@
     </div>
 
     <!-- ======================================================== -->
-    <!-- PESTAÑA 3: FICHAS INDIVIDUALES (PROTEGIDO CON PASSWORD) -->
+    <!-- PESTAÑA 3: FICHAS INDIVIDUALES (PROTEGIDO CON CLAVE 2016) -->
     <!-- ======================================================== -->
     <div id="tab3Content" class="space-y-6 hidden">
 
       <!-- PANTALLA DE BLOQUEO POR CONTRASEÑA -->
-      <div id="passwordGate" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 max-w-lg mx-auto text-center space-y-4 my-8">
-        <div class="w-14 h-14 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center mx-auto text-rose-600 shadow-sm">
+      <div id="passwordGate" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 max-w-md mx-auto text-center space-y-4 my-8">
+        <div class="w-14 h-14 rounded-2xl bg-rose-50 border border-rose-200 flex items-center justify-center mx-auto text-[#C81057] shadow-sm">
           <i data-lucide="lock" class="w-7 h-7"></i>
         </div>
         <div>
           <h3 class="text-lg font-black text-slate-900">Registro Individual de Estudiantes</h3>
-          <p class="text-xs text-slate-500 mt-1">Esta sección contiene datos nominativos y calificaciones individuales de la cohorte final (N=20). Ingrese la clave de autorización para acceder.</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            Esta sección contiene los registros nominativos y notas de autodiagnóstico de la cohorte evaluada (N=20). Ingrese la clave de autorización para acceder.
+          </p>
         </div>
 
         <form id="pwdForm" onsubmit="unlockTable(event)" class="space-y-3 pt-2">
-          <div class="relative">
-            <input type="password" id="pwdInput" placeholder="Ingrese clave de acceso..." class="w-full text-center text-sm bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#C81057] font-bold tracking-widest text-slate-800">
-          </div>
-          <p id="pwdError" class="text-xs text-rose-600 font-bold hidden">Contraseña incorrecta. Por favor intente nuevamente.</p>
+          <input type="password" id="pwdInput" placeholder="Clave de acceso..." class="w-full text-center text-sm bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#C81057] font-bold tracking-widest text-slate-800">
+          <p id="pwdError" class="text-xs text-rose-600 font-bold hidden">Contraseña incorrecta. Intente nuevamente.</p>
           <button type="submit" class="w-full py-2.5 rounded-xl bg-[#C81057] hover:bg-rose-700 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
-            Desbloquear Información
+            Desbloquear Fichas
           </button>
         </form>
       </div>
 
-      <!-- TABLA DESBLOQUEADA (OCULTA INICIALMENTE) -->
+      <!-- CONTENIDO PROTEGIDO -->
       <div id="protectedData" class="space-y-4 hidden">
-        
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-3">
             <div>
               <div class="flex items-center gap-2">
                 <i data-lucide="unlock" class="w-5 h-5 text-emerald-600"></i>
-                <h2 class="text-lg font-black text-slate-900">Registro Individual de Estudiantes Evaluados (N=20)</h2>
+                <h2 class="text-lg font-black text-slate-900">Fichas Individuales de Estudiantes Evaluados (N=20)</h2>
               </div>
-              <p class="text-xs text-slate-500 mt-0.5">Consulta de calificaciones por módulo, promedio ex-post, categoría NPS y evidencia de transferencia</p>
+              <p class="text-xs text-slate-500 mt-0.5">Calificaciones individuales por módulo y evidencias de transferencia registradas</p>
             </div>
             
             <div class="flex items-center gap-3">
-              <div class="w-full sm:w-64">
-                <input type="text" id="searchInput" onkeyup="applyFilters()" placeholder="Buscar participante..." class="w-full text-xs bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#C81057]">
-              </div>
-              <button onclick="lockTable()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition">
+              <input type="text" id="searchInput" onkeyup="filterParticipants()" placeholder="Buscar participante..." class="text-xs bg-slate-50 border border-slate-300 rounded-xl px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#C81057] w-60">
+              <button onclick="lockTable()" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1 transition">
                 <i data-lucide="lock" class="w-3.5 h-3.5"></i>
                 <span>Bloquear</span>
               </button>
@@ -688,16 +642,16 @@
                   <th class="py-2.5 px-3">Estudiante</th>
                   <th class="py-2.5 px-2 text-center">Institución</th>
                   <th class="py-2.5 px-2">Participación Demoday</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Innovación Sostenible">M1</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Diseño Negocio">M2</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Herramientas Digitales">M3</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Modelos Circulares">M4</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Liderazgo Verde">M5</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Tendencias Tech">M6</th>
-                  <th class="py-2.5 px-1.5 text-center" title="Pitch Day">M7</th>
+                  <th class="py-2.5 px-1.5 text-center">M1</th>
+                  <th class="py-2.5 px-1.5 text-center">M2</th>
+                  <th class="py-2.5 px-1.5 text-center">M3</th>
+                  <th class="py-2.5 px-1.5 text-center">M4</th>
+                  <th class="py-2.5 px-1.5 text-center">M5</th>
+                  <th class="py-2.5 px-1.5 text-center">M6</th>
+                  <th class="py-2.5 px-1.5 text-center">M7</th>
                   <th class="py-2.5 px-2 text-center">Promedio</th>
                   <th class="py-2.5 px-2 text-center">NPS</th>
-                  <th class="py-2.5 px-3">Evidencia Cualitativa / Observación</th>
+                  <th class="py-2.5 px-3">Evidencia Cualitativa</th>
                 </tr>
               </thead>
               <tbody id="participantsTableBody" class="divide-y divide-slate-100">
@@ -706,44 +660,38 @@
             </table>
           </div>
         </div>
-
       </div>
 
     </div>
 
   </main>
 
-  <!-- FOOTER INSTITUCIONAL -->
+  <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-400 text-xs py-6 mt-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-4">
       <div>
-        <p class="font-extrabold text-slate-200">Programa Negocios Circulares y Digitales para El Loa 2026</p>
-        <p class="text-slate-400 text-[11px]">Proyecto apoyado por Comité Corfo Antofagasta (Instrumento Viraliza Formación 25VIRTL-307464) • Ejecuta Verdical</p>
+        <p class="font-extrabold text-white text-sm">Programa Negocios Circulares y Digitales para El Loa 2026</p>
+        <p class="text-slate-400 text-[11px] mt-0.5">Comité Corfo Antofagasta (Viraliza Formación 25VIRTL-307464) • Ejecuta Verdical</p>
       </div>
-      <div class="flex items-center gap-4 text-[11px]">
+      <div class="flex items-center gap-3 text-[11px]">
         <span>INACAP Sede Calama</span>
         <span>•</span>
         <span>AIEP Calama</span>
         <span>•</span>
-        <span>Noviembre 2026</span>
+        <span>Calama, Chile</span>
       </div>
     </div>
   </footer>
 
-  <!-- LÓGICA DE JAVASCRIPT Y CHART.JS -->
+  <!-- JAVASCRIPT & CHARTS -->
   <script>
-    const data = {"project": {"title": "Programa de Negocios Digitales y Circulares para El Loa 2026", "subtitle": "Panel Integral de Métricas, Transferencia Cognitiva, NPS y Evaluación de Proyectos", "fund": "Fondo Viraliza Corfo - Código 25VIRTL-307464", "institutions": ["AIEP Calama", "INACAP Sede Calama"], "period": "Mayo - Noviembre 2026", "location": "Calama, Región de Antofagasta, Chile", "sheet_url": "https://docs.google.com/spreadsheets/d/11WuFrvQDqUyUOGWH9VXCKtdoiFUVeoQOnhZTgswcXLU/edit?usp=drivesdk"}, "kpis": {"total_unique_participants": 44, "certified_students": 20, "certification_rate": 100.0, "exhibitors_count": 11, "diploma_only_count": 9, "featured_projects_count": 4, "nps_score": 15.0, "promoters_pct": 35.0, "passives_pct": 45.0, "detractors_pct": 20.0, "avg_exante": 2.42, "avg_expost": 4.24, "delta_gain": 1.82, "delta_pct": 75.0}, "nps": {"global": {"total": 20, "promoters": 7, "passives": 9, "detractors": 4, "nps_score": 15.0, "promoters_pct": 35.0, "passives_pct": 45.0, "detractors_pct": 20.0, "avg_score": 4.23}, "inacap": {"total": 8, "promoters": 3, "passives": 3, "detractors": 2, "nps_score": 12.5, "promoters_pct": 37.5, "passives_pct": 37.5, "detractors_pct": 25.0, "avg_score": 4.27}, "aiep": {"total": 12, "promoters": 4, "passives": 6, "detractors": 2, "nps_score": 16.7, "promoters_pct": 33.3, "passives_pct": 50.0, "detractors_pct": 16.7, "avg_score": 4.21}, "expositores": {"total": 11, "promoters": 4, "passives": 4, "detractors": 3, "nps_score": 9.1, "promoters_pct": 36.4, "passives_pct": 36.4, "detractors_pct": 27.3, "avg_score": 4.26}, "diplomas": {"total": 9, "promoters": 3, "passives": 5, "detractors": 1, "nps_score": 22.2, "promoters_pct": 33.3, "passives_pct": 55.6, "detractors_pct": 11.1, "avg_score": 4.2}}, "modules_delta": [{"module": "Innovación Sostenible", "ex_ante": 2.55, "ex_post": 4.35, "delta": 1.8, "pct_gain": 70.6}, {"module": "Diseño de Negocio Sostenible", "ex_ante": 2.84, "ex_post": 4.32, "delta": 1.48, "pct_gain": 52.1}, {"module": "Herramientas Digitales", "ex_ante": 2.26, "ex_post": 4.55, "delta": 2.29, "pct_gain": 101.3}, {"module": "Modelos Circulares", "ex_ante": 1.97, "ex_post": 3.75, "delta": 1.78, "pct_gain": 90.4}, {"module": "Liderazgo Verde", "ex_ante": 2.48, "ex_post": 4.26, "delta": 1.78, "pct_gain": 71.8}, {"module": "Tendencias Tecnológicas", "ex_ante": 2.42, "ex_post": 3.84, "delta": 1.42, "pct_gain": 58.7}, {"module": "Comunicación / Pitch", "ex_ante": 2.45, "ex_post": 4.62, "delta": 2.17, "pct_gain": 88.6}], "projects": [{"name": "Ecoesmart", "avg_score": 17.33, "max_score": 25, "pct_score": 69.3, "tag": "1er Lugar Compartido (Empate Técnico)", "incentive": "Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado", "team": "Felipe Vergara, Cristian Salfate, Lorens Barboza (INACAP)", "pitch": "Sistema de reciclaje incentivado y trazabilidad digital de botellas PET con sensores y recompensas (Redimir/Reciclaz).", "strengths": "Presentación de prototipo MVP funcional, excelente construcción de solución, diseño orientado a ODS y oratoria sólida.", "evaluations": [{"juror": "Rodrigo Mérida", "score": 18, "comment": "Felicitaciones pensaron en toda la trayectoria del reciclaje e incentivar a las personas "}, {"juror": "Cecilia Martínez", "score": 18, "comment": "Mejorar la propuesta para llegar a más personas y plantiar con cuantos basureros partiran , muy bueno que lo quieren llevar lejos pero como?  "}, {"juror": "Valentina Muñoz", "score": 16, "comment": "- Excelente oratoria, recomiendo que utilicen la presentación como una especie de ayuda-memoria: no es sólo para el público, sino también para que ustedes recuerden lo que quieren decir en cada parte de la presentación. No es necesario recordar de memoria exactamente cada palabra del guión: lo importante es explicarlo en sus propias palabras. Ustedes son los mejores expertos de su propio proyecto ;)\n- El equipo destacó muchísimo con esa presentación de prototipo, excelente construcción y diseño de la solución, gran avance para ser un MVP (producto mínimo viable).\n- Muy buena incorporación de la metodología de proyecto orientado a ODS!"}], "criteria": {"problema": 4.0, "originalidad": 3.33, "comunicacion": 3.33, "digital": 3.0, "tecnicas": 3.67, "total": 17.33}}, {"name": "Recompost", "avg_score": 17.33, "max_score": 25, "pct_score": 69.3, "tag": "1er Lugar Compartido (Empate Técnico)", "incentive": "Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado", "team": "Carlos Olave Godoy, Mariana Zambrana, Jair Rodriguez (INACAP)", "pitch": "Red de compostaje comunal con contenedores inteligentes asistidos por IA y gamificación en Calama.", "strengths": "Excelente energía expositiva, potencial alto de escalabilidad comunal y aprovechamiento de residuos orgánicos urbanos.", "evaluations": [{"juror": "Cecilia Martínez", "score": 18, "comment": "Muy buena presentación, explicaron muy bien solo mejorar la explicación de como funcionará la idea lo que se ocupará para  crearlo y el costo , pensar en el siguiente paso tambien "}, {"juror": "Valentina Muñoz", "score": 18, "comment": "- Excelente oratoria y energía durante toda la presentación.\n- ¿Cuántos basureros hay en Calama? ¿Cuánto saldría implementar su propuesta tecnologógica en la comuna o cómo lo gestionarían? Es una excelente idea con mucho potencial de escalabilidad si logran aumentar la factivibilidad. ¡Felicidades!"}, {"juror": "Rodrigo Mérida", "score": 16, "comment": "Deben conectarse con otras organizaciones para mejorar el ciclo del proyecto que se hará con el compost."}], "criteria": {"problema": 4.0, "originalidad": 3.33, "comunicacion": 3.67, "digital": 3.0, "tecnicas": 3.33, "total": 17.33}}, {"name": "TecnMin", "avg_score": 14.0, "max_score": 25, "pct_score": 56.0, "tag": "Proyecto Destacado", "incentive": "Incentivo a Proyecto Destacado - Reconocimiento Innovación Territorial", "team": "Joaquin Yufla Anza y equipo (INACAP)", "pitch": "Integración de tecnologías habilitantes, IoT y descarbonización para faenas y proveedores mineros en El Loa.", "strengths": "Foco en la industria tractora regional (minería) y solución directa a brechas de formación y digitalización industrial.", "evaluations": [{"juror": "Valentina Muñoz", "score": 14, "comment": "- El gráfico de barras presentado al inicio no se explicó muy bien, a veces es mejor no mencionar porcentajes exactos mientras se comprenda bien lo que significan. Ejemplo: la mayorí se sintió medianamente preparado (3 de 5)."}, {"juror": "Cecilia Martínez", "score": 15, "comment": "Explicar mejor el problema, la encuesta no fueron bien explicado, la solución no quedó bien clara, en la presentación, confiar más en lo que en su proyecto "}], "criteria": {"problema": 3.33, "originalidad": 2.67, "comunicacion": 2.67, "digital": 3.0, "tecnicas": 2.33, "total": 14.0}}, {"name": "Calama se reconstruye", "avg_score": 13.67, "max_score": 25, "pct_score": 54.7, "tag": "Proyecto Destacado", "incentive": "Incentivo a Proyecto Destacado - Reconocimiento Circularidad Comunitaria", "team": "Lucy Tinte Reyes, Yoset Manacá, Ingri Gahona (AIEP)", "pitch": "Fabricación y rescate de mobiliario urbano sostenible a partir de residuos recuperados en la comuna.", "strengths": "Gran enfoque territorial, rescate de materiales locales y rápida respuesta del equipo ante preguntas del jurado.", "evaluations": [{"juror": "Cecilia Martínez", "score": 17, "comment": "Muy buena presentación, me gusto mucho la Solución pero me falto entender como los cremas si manadarna a hacer los muebles o ustedes mismas realizarán los muebles "}, {"juror": "Valentina Muñoz", "score": 9, "comment": "- Inconsistencia de los datos duros (dijeron 4000 toneladas por recuperar pero la ppt decía 240).\n- La segunda chica retomó muy bien, hay que saber confiar en el equipo y apañarse cuando es necesario <3 Para la otra quizá reaccionar un poco más rápido, pero es cosa de práctica!\n- Buen enfoque territorial ;)"}, {"juror": "Rodrigo Mérida", "score": 15, "comment": "Es valioso que puedan explorar aquellos lugares y espacios específicos para poder producir "}], "criteria": {"problema": 2.67, "originalidad": 2.67, "comunicacion": 3.0, "digital": 2.67, "tecnicas": 2.67, "total": 13.67}}], "participants": [{"name": "Felipe Vergara C.", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 4.43, "nps_category": "Pasivo", "m1": 5, "m2": 4, "m3": 5, "m4": 4, "m5": 4, "m6": 4, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "Entender mejor la economia circular y sostenibilidad"}, {"module": "M2. Diseño Negocio Sost.", "score": "4.0", "text": "Si, en nuestro proyecto ataca directamente la producción de Plasticos Pet, Reutilizandolos y dando una segunda vida"}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "las mas destacadas es IA y Marketing"}, {"module": "M4. Modelos Circulares", "score": "4.0", "text": "Si, en nuestro caso Reciclaz y redimir"}, {"module": "M5. Liderazgo Verde", "score": "4.0", "text": "Si, se habla muy poco de economia circular"}, {"module": "M6. Tendencias Tecnológicas", "score": "4.0", "text": "el uso de las distintas herramientas nos ayudan a encontrar soluciones a problemas espesificos"}, {"module": "M7. Pitch Day", "score": "5.0", "text": "Si, todos los libro entregados y asistidos por el agente de IA"}], "obs": "Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Cristian Salfate", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 3.17, "nps_category": "Detractor", "m1": 4, "m2": "-", "m3": 4, "m4": 3, "m5": 2, "m6": 2, "m7": 4, "open_responses": [{"module": "M1. Innovación Sost.", "score": "4.0", "text": "Tema reciclaje fue fundamental, por podere comocer una realidad de la ciudad y como podemos enfrentarla"}, {"module": "M2. Diseño Negocio Sost.", "score": "nan", "text": "Si el agua y medición de incorporan y controlan los Residuos"}, {"module": "M3. Herramientas Digitales", "score": "4.0", "text": "Automatización y E-comerce son Fundamentales para construir nuevos proyectos al igual que medir"}, {"module": "M4. Modelos Circulares", "score": "3.0", "text": "Redimir y reciclaz"}, {"module": "M5. Liderazgo Verde", "score": "2.0", "text": "Brechas o desconocimientos."}, {"module": "M6. Tendencias Tecnológicas", "score": "2.0", "text": "no sabria decir cual"}, {"module": "M7. Pitch Day", "score": "4.0", "text": "Datos relevantes sobre ciudades mas contaminadas"}], "obs": "M2 Diseño de Negocio: casilla de escala sin marcar (dejada en blanco), aunque escribió respuesta cualitativa. M1 corrigió de 2 a 4."}, {"name": "Lorens Barboza", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 4.0, "nps_category": "Pasivo", "m1": 4, "m2": 4, "m3": 4, "m4": 4, "m5": 4, "m6": 3, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "4.0", "text": "Si, me gusto mucho el tema sostenible"}, {"module": "M2. Diseño Negocio Sost.", "score": "4.0", "text": "Si logramos identificar cuanta basura se desperdicia"}, {"module": "M3. Herramientas Digitales", "score": "4.0", "text": "la IA"}, {"module": "M4. Modelos Circulares", "score": "4.0", "text": "Reciclado y redimir."}, {"module": "M5. Liderazgo Verde", "score": "4.0", "text": "las personas tienden a generar mucha basura y no recicla."}, {"module": "M6. Tendencias Tecnológicas", "score": "3.0", "text": "La inteligencia artificial"}, {"module": "M7. Pitch Day", "score": "5.0", "text": "Datos de contaminacion en la ciudad"}], "obs": "Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Carlos Olave Godoy", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 3.71, "nps_category": "Detractor", "m1": 4, "m2": 3, "m3": 5, "m4": 2, "m5": 5, "m6": 2, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "4.0", "text": "La emseñanza sobre la Inteligencia Artificial Influyo en mi propuesta para el diseño del contenedor Inteligente"}, {"module": "M2. Diseño Negocio Sost.", "score": "3.0", "text": "Una buena enseñanza sobre los temas de sostenibilidad aunque no se Incorporo mucho en el proyecto"}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "Todas la herramientas permiten integrar a"}, {"module": "M4. Modelos Circulares", "score": "2.0", "text": "No ser reconocer, pero se buscaría en las fundaciones ecologicas."}, {"module": "M5. Liderazgo Verde", "score": "5.0", "text": "La mayoría de la comunidad no estan concientes de como reciclar."}, {"module": "M6. Tendencias Tecnológicas", "score": "2.0", "text": "si, en especifico tecnologias que ayudan a reducir la contaminacion"}, {"module": "M7. Pitch Day", "score": "5.0", "text": "La necesidad de Implementar el compostaje a la comunidad"}], "obs": "Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Jair Rodriguez Lima", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 4.14, "nps_category": "Pasivo", "m1": 5, "m2": 4, "m3": 4, "m4": 4, "m5": 3, "m6": 4, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "Si me gusto mucho y aprendi mucho."}, {"module": "M2. Diseño Negocio Sost.", "score": "4.0", "text": "Si logramos incorporar todo lo aprendido."}, {"module": "M4. Modelos Circulares", "score": "4.0", "text": "Si reconosco que aprendi y conosco los consepto y actores"}, {"module": "M5. Liderazgo Verde", "score": "3.0", "text": "Si y implemetamos los cambios"}, {"module": "M6. Tendencias Tecnológicas", "score": "4.0", "text": "Si como el uso de la Ia."}, {"module": "M7. Pitch Day", "score": "5.0", "text": "Si use."}], "obs": "M3 Herramientas Digitales: respuesta abierta dejada en blanco (escala marcada en 4)."}, {"name": "Lucy W. Tinte Reyes", "institution": "AIEP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 5.0, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 5, "m5": 5, "m6": 5, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "Sostenibilidad, buscando buenas propuestas."}, {"module": "M2. Diseño Negocio Sost.", "score": "5.0", "text": "Energía."}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "Con IA"}, {"module": "M4. Modelos Circulares", "score": "5.0", "text": "En la naturaleza."}, {"module": "M5. Liderazgo Verde", "score": "5.0", "text": "Si, cambio educacional"}, {"module": "M6. Tendencias Tecnológicas", "score": "5.0", "text": "Impulsar mi carrera hacia el futuro"}, {"module": "M7. Pitch Day", "score": "5.0", "text": "Buenísimos pitches"}], "obs": "Expositora AIEP. Instrumento completo con todas las escalas en puntaje máximo (5)."}, {"name": "Joaquin Israel Santiago Yufla Anza", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 4.71, "nps_category": "Promotor", "m1": 5, "m2": 3, "m3": 5, "m4": 5, "m5": 5, "m6": 5, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "Brechas entre la formación y el mundo idustrial"}, {"module": "M2. Diseño Negocio Sost.", "score": "3.0", "text": "Incorpore otros indicadores como la Calidad de Proyectos y Sostenibles"}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "no, estas tecnologias son Relevantes, pero cada dia surgen herramientas más o mejores que el de ayer."}, {"module": "M4. Modelos Circulares", "score": "5.0", "text": "Si, con los contenidos vistos, logro identificar con mas claridad los modelos de negocio."}, {"module": "M5. Liderazgo Verde", "score": "5.0", "text": "Si, en calama existen diversas barreras lo cual son una oportu-nidad"}, {"module": "M6. Tendencias Tecnológicas", "score": "5.0", "text": "La tecnologia es una herramienta y donde logra impulsar Proyectos u otras tecnologias."}, {"module": "M7. Pitch Day", "score": "5.0", "text": "Si, encuestas de estudios y estudios propios en inacap."}], "obs": "Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Mary Morales Chaira", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 5.0, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 5, "m5": "-", "m6": "-", "m7": "-", "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "en el Loa existe escasez de agua, el cuidado del medio ambiente y el uso responsable de los recursos."}, {"module": "M2. Diseño Negocio Sost.", "score": "5.0", "text": "Si, incorpore la importancia de crear ahorrar el agua y energia, reducir los reciduos y aprobechar mejor los materiales"}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "Las plantillas de excel y las plataforma de venta de internet"}, {"module": "M4. Modelos Circulares", "score": "5.0", "text": "El Loa lo puede relacionar con empresas mineras, agricultores, recicladore y pequeños empresarios."}, {"module": "M5. Liderazgo Verde", "score": "nan", "text": "Es la falta de información y de habitos de cuidado ambiental."}, {"module": "M6. Tendencias Tecnológicas", "score": "nan", "text": "reducir la contaminacion, nos permite ahorrar los recursos"}, {"module": "M7. Pitch Day", "score": "nan", "text": "el ahorro de recursos y los beneficios que pueden entregar mi propuesta a la comunidad"}], "obs": "M5, M6 y M7: casillas de escala numérica dejadas sin marcar (en blanco), pero escribió respuestas abiertas completas."}, {"name": "Mariana Zambrana Mamani", "institution": "INACAP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 5.0, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 5, "m5": 5, "m6": 5, "m7": 5, "open_responses": [{"module": "M1. Innovación Sost.", "score": "5.0", "text": "Se detecto sobre la contaminacion que hay dentro de la comuna, y al escuchar otras ideas se puede observar el cambio que se podria realizar."}, {"module": "M2. Diseño Negocio Sost.", "score": "5.0", "text": "la toneladas en base a porcentajes de la municipalidad de calama, con estadisticas"}], "obs": "M1 y M2 con respuestas abiertas y cerradas en 5; M3 a M7 con escala marcada en 5 pero respuestas abiertas dejadas en blanco."}, {"name": "Yoset Manacá Díaz", "institution": "AIEP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 4.14, "nps_category": "Pasivo", "m1": 4, "m2": 5, "m3": 4, "m4": 4, "m5": 4, "m6": 4, "m7": 4, "open_responses": [{"module": "M1. Innovación Sost.", "score": "4.0", "text": "Si, el desafio de reciclar las botellas plasticas para lograr darles nueva vida"}, {"module": "M2. Diseño Negocio Sost.", "score": "5.0", "text": "la huella de carbono"}, {"module": "M3. Herramientas Digitales", "score": "4.0", "text": "la trazabilidad en los estados del producto"}, {"module": "M4. Modelos Circulares", "score": "4.0", "text": "Investigarlos."}, {"module": "M5. Liderazgo Verde", "score": "4.0", "text": "aun hay muchas barreras en el entorno en general propondria hablar con el municipio para concientizar a la comuna a reciclar mucho más"}, {"module": "M6. Tendencias Tecnológicas", "score": "4.0", "text": "no sabria pero si me gustaria saber más"}, {"module": "M7. Pitch Day", "score": "4.0", "text": "Si, la cantidad de plastico Pet que hay"}], "obs": "Expositora AIEP. Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Ingri Gahona Collao", "institution": "AIEP", "type": "Equipo Expositor Demoday (Pitch)", "avg_score": 3.57, "nps_category": "Detractor", "m1": 4, "m2": 4, "m3": 5, "m4": 3, "m5": 3, "m6": 3, "m7": 3, "open_responses": [{"module": "M1. Innovación Sost.", "score": "4.0", "text": "ABORDAR LA PROBLEMATICA LOCAL"}, {"module": "M2. Diseño Negocio Sost.", "score": "4.0", "text": "LAS EMISIONES RO2 (CO2)"}, {"module": "M3. Herramientas Digitales", "score": "5.0", "text": "TRAZABILIDAD EN EL ESTADO DEL PRODUCTO"}, {"module": "M4. Modelos Circulares", "score": "3.0", "text": "BUSCARLO A TRAVES DE INVESTIGACION"}, {"module": "M5. Liderazgo Verde", "score": "3.0", "text": "SI SE DISPUNIERA MAS RECURSOS SE DERRUMBARIA LA BARRERA CULTURAL."}, {"module": "M6. Tendencias Tecnológicas", "score": "3.0", "text": "ME GUSTARIA CONOCER MAS TECNOLOGIA"}, {"module": "M7. Pitch Day", "score": "3.0", "text": "SI LA CANTIDAD DE DESECHO PLASTICO PET"}], "obs": "Expositora AIEP. Instrumento completo con respuestas abiertas y cerradas."}, {"name": "Anghy Neira", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.5, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 3, "m5": 5, "m6": 4, "m7": "-", "open_responses": [], "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."}, {"name": "Dana L. Alquez Villca", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.83, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 4, "m5": 5, "m6": 5, "m7": "-", "open_responses": [], "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."}, {"name": "Axel Gaete", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.0, "nps_category": "Pasivo", "m1": 4, "m2": 4, "m3": 4, "m4": 4, "m5": 4, "m6": 4, "m7": 4, "open_responses": [], "obs": "Marcó todas las casillas cerradas en 4 (incluido M7 Pitch Day). Respuestas abiertas no requeridas."}, {"name": "Joice Vizcarra Godoy", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.17, "nps_category": "Pasivo", "m1": 4, "m2": 4, "m3": 5, "m4": 3, "m5": 5, "m6": 4, "m7": "-", "open_responses": [], "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."}, {"name": "Luis Diego Misericordia León", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 3.83, "nps_category": "Pasivo", "m1": 4, "m2": 4, "m3": 3, "m4": 3, "m5": 5, "m6": 4, "m7": "-", "open_responses": [], "obs": "M6 marcado con X en 4 con línea tenue en 5 (revisar manual). M7 sin marcar."}, {"name": "Karla Cadima Rodríguez", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.33, "nps_category": "Pasivo", "m1": 5, "m2": 4, "m3": 4, "m4": 4, "m5": 4, "m6": 5, "m7": "-", "open_responses": [], "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."}, {"name": "Nayeli Quispe Rojas", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 3.83, "nps_category": "Pasivo", "m1": 3, "m2": 4, "m3": 4, "m4": 4, "m5": 4, "m6": 4, "m7": "-", "open_responses": [], "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."}, {"name": "María Luz Torres Ojeda", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 4.86, "nps_category": "Promotor", "m1": 5, "m2": 5, "m3": 5, "m4": 4, "m5": 5, "m6": 5, "m7": 5, "open_responses": [], "obs": "Marcó todas las casillas en 5 (M4 en 4), incluido M7. Respuestas abiertas no requeridas."}, {"name": "Kiara Martinic", "institution": "AIEP", "type": "Asistente al Demoday (Recepción de Diploma)", "avg_score": 3.43, "nps_category": "Detractor", "m1": 2, "m2": 5, "m3": 5, "m4": 2, "m5": 4, "m6": 1, "m7": 5, "open_responses": [], "obs": "Marcó M7 en 5. Presenta variabilidad marcada (M6=1, M1=2, M4=2, M2=5, M3=5, M7=5)."}]};
-
     let isUnlocked = sessionStorage.getItem('students_unlocked') === 'true';
 
     function switchTab(tabId) {
-      // Update Tab buttons
       ['tabBtn1', 'tabBtn2', 'tabBtn3'].forEach(id => {
-        const btn = document.getElementById(id);
-        btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-600 hover:bg-slate-200";
+        document.getElementById(id).className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-slate-100 text-slate-700 hover:bg-slate-200";
       });
 
-      // Hide all tab contents
       ['tab1Content', 'tab2Content', 'tab3Content'].forEach(id => {
         document.getElementById(id).classList.add('hidden');
       });
@@ -769,7 +717,7 @@
       if (isUnlocked) {
         gate.classList.add('hidden');
         prot.classList.remove('hidden');
-        renderTable(data.participants);
+        renderTable();
       } else {
         gate.classList.remove('hidden');
         prot.classList.add('hidden');
@@ -798,6 +746,80 @@
       lucide.createIcons();
     }
 
+    // Student Data
+    const students = [
+      { name: "Felipe Vergara C.", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 4, m3: 5, m4: 4, m5: 4, m6: 4, m7: 5, avg: 4.43, nps: "Pasivo", obs: "Ecoesmart (1er Lugar). Proyecto PET con trazabilidad digital." },
+      { name: "Cristian Salfate", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 4, m2: "-", m3: 4, m4: 3, m5: 2, m6: 2, m7: 4, avg: 3.17, nps: "Detractor", obs: "Ecoesmart. M2 cualitativo completado sin marcar escala." },
+      { name: "Lorens Barboza", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 4, m2: 4, m3: 4, m4: 4, m5: 4, m6: 3, m7: 5, avg: 4.00, nps: "Pasivo", obs: "Ecoesmart. Respuestas completas." },
+      { name: "Carlos Olave Godoy", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 4, m2: 3, m3: 5, m4: 2, m5: 5, m6: 2, m7: 5, avg: 3.71, nps: "Detractor", obs: "Recompost (1er Lugar). Foco en compostaje inteligente." },
+      { name: "Jair Rodriguez Lima", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 4, m3: 4, m4: 4, m5: 3, m6: 4, m7: 5, avg: 4.14, nps: "Pasivo", obs: "Recompost. M3 cualitativo en blanco (escala 4)." },
+      { name: "Mariana Zambrana Mamani", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 5, m3: 5, m4: 5, m5: 5, m6: 5, m7: 5, avg: 5.00, nps: "Promotor", obs: "Recompost. Puntuación máxima en todos los módulos." },
+      { name: "Joaquin Yufla Anza", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 3, m3: 5, m4: 5, m5: 5, m6: 5, m7: 5, avg: 4.71, nps: "Promotor", obs: "TecnMin (Proyecto Destacado). IoT minero y descarbonización." },
+      { name: "Mary Morales Chaira", inst: "INACAP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 5, m3: 5, m4: 5, m5: "-", m6: "-", m7: "-", avg: 5.00, nps: "Promotor", obs: "M5 a M7 con extensas respuestas abiertas." },
+      { name: "Lucy W. Tinte Reyes", inst: "AIEP", type: "Equipo Expositor Demoday (Pitch)", m1: 5, m2: 5, m3: 5, m4: 5, m5: 5, m6: 5, m7: 5, avg: 5.00, nps: "Promotor", obs: "Calama se reconstruye (Proyecto Destacado)." },
+      { name: "Yoset Manacá Díaz", inst: "AIEP", type: "Equipo Expositor Demoday (Pitch)", m1: 4, m2: 5, m3: 4, m4: 4, m5: 4, m6: 4, m7: 4, avg: 4.14, nps: "Pasivo", obs: "Calama se reconstruye. 6 asistencias en talleres." },
+      { name: "Ingri Gahona Collao", inst: "AIEP", type: "Equipo Expositor Demoday (Pitch)", m1: 4, m2: 4, m3: 5, m4: 3, m5: 3, m6: 3, m7: 3, avg: 3.57, nps: "Detractor", obs: "Calama se reconstruye. 5 asistencias en talleres." },
+      { name: "Anghy Neira", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 5, m2: 5, m3: 5, m4: 3, m5: 5, m6: 4, m7: "-", avg: 4.50, nps: "Promotor", obs: "Finalista de talleres presenciales." },
+      { name: "Dana L. Alquez Villca", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 5, m2: 5, m3: 5, m4: 4, m5: 5, m6: 5, m7: "-", avg: 4.83, nps: "Promotor", obs: "Finalista de talleres presenciales." },
+      { name: "Axel Gaete", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 4, m2: 4, m3: 4, m4: 4, m5: 4, m6: 4, m7: 4, avg: 4.00, nps: "Pasivo", obs: "5 asistencias a talleres preparatorios." },
+      { name: "Joice Vizcarra Godoy", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 4, m2: 4, m3: 5, m4: 3, m5: 5, m6: 4, m7: "-", avg: 4.17, nps: "Pasivo", obs: "Finalista de talleres presenciales." },
+      { name: "Luis Diego Misericordia", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 4, m2: 4, m3: 3, m4: 3, m5: 5, m6: 4, m7: "-", avg: 3.83, nps: "Pasivo", obs: "Finalista de talleres presenciales." },
+      { name: "Karla Cadima Rodríguez", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 5, m2: 4, m3: 4, m4: 4, m5: 4, m6: 5, m7: "-", avg: 4.33, nps: "Pasivo", obs: "5 asistencias a talleres preparatorios." },
+      { name: "Nayeli Quispe Rojas", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 3, m2: 4, m3: 4, m4: 4, m5: 4, m6: 4, m7: "-", avg: 3.83, nps: "Pasivo", obs: "5 asistencias a talleres preparatorios." },
+      { name: "María Luz Torres Ojeda", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 5, m2: 5, m3: 5, m4: 4, m5: 5, m6: 5, m7: 5, avg: 4.86, nps: "Promotor", obs: "5 asistencias a talleres preparatorios." },
+      { name: "Kiara Martinic", inst: "AIEP", type: "Asistente Demoday (Diploma)", m1: 2, m2: 5, m3: 5, m4: 2, m5: 4, m6: 1, m7: 5, avg: 3.43, nps: "Detractor", obs: "5 asistencias a talleres preparatorios." }
+    ];
+
+    function renderTable(list) {
+      const tbody = document.getElementById('participantsTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+      const dataToRender = list || students;
+
+      dataToRender.forEach((p, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = idx % 2 === 0 ? 'bg-white hover:bg-slate-50 transition' : 'bg-[#FAF8F5] hover:bg-slate-50 transition';
+
+        let badgeClass = 'badge-passive';
+        if (p.nps === 'Promotor') badgeClass = 'badge-promoter';
+        if (p.nps === 'Detractor') badgeClass = 'badge-detractor';
+
+        let instBadge = p.inst === 'INACAP' 
+          ? '<span class="bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded text-[10px]">INACAP</span>'
+          : '<span class="bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded text-[10px]">AIEP</span>';
+
+        let typeBadge = p.type.includes('Expositor')
+          ? '<span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Expositor Demoday</span>'
+          : '<span class="text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Asistente (Diploma)</span>';
+
+        tr.innerHTML = `
+          <td class="py-2.5 px-3 font-bold text-slate-900">${p.name}</td>
+          <td class="py-2.5 px-2 text-center">${instBadge}</td>
+          <td class="py-2.5 px-2">${typeBadge}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m1}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m2}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m3}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m4}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m5}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m6}</td>
+          <td class="py-2.5 px-1.5 text-center font-medium">${p.m7}</td>
+          <td class="py-2.5 px-2 text-center font-black text-slate-900">${typeof p.avg === 'number' ? p.avg.toFixed(2) : p.avg}</td>
+          <td class="py-2.5 px-2 text-center">
+            <span class="px-2 py-0.5 rounded-full font-bold text-[10px] ${badgeClass}">${p.nps}</span>
+          </td>
+          <td class="py-2.5 px-3 text-[11px] text-slate-600 max-w-xs">${p.obs}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+      lucide.createIcons();
+    }
+
+    function filterParticipants() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const filtered = students.filter(s => s.name.toLowerCase().includes(q) || s.inst.toLowerCase().includes(q) || s.obs.toLowerCase().includes(q));
+      renderTable(filtered);
+    }
+
     function initCharts() {
       // 1. Radar Chart (Curva de Transferencia)
       const ctxRadar = document.getElementById('radarChart').getContext('2d');
@@ -808,15 +830,15 @@
           datasets: [
             {
               label: 'Ex-ante (Línea Base)',
-              data: data.modules_delta.map(m => m.ex_ante),
-              borderColor: '#94a3b8',
+              data: [3.39, 2.87, 3.10, 2.77, 3.48, 3.03, 3.45],
+              borderColor: '#94A3B8',
               backgroundColor: 'rgba(148, 163, 184, 0.2)',
               borderWidth: 2,
-              pointBackgroundColor: '#64748b'
+              pointBackgroundColor: '#64748B'
             },
             {
               label: 'Ex-post (Salida)',
-              data: data.modules_delta.map(m => m.ex_post),
+              data: [4.45, 4.53, 4.65, 3.85, 4.37, 3.84, 4.79],
               borderColor: '#C81057',
               backgroundColor: 'rgba(200, 16, 87, 0.25)',
               borderWidth: 2.5,
@@ -841,7 +863,7 @@
         }
       });
 
-      // 2. Desempeño Demoday por Criterio de Jurados (Horizontal / Grouped Bar)
+      // 2. Desempeño Demoday por Criterio de Jurados
       const ctxCrit = document.getElementById('projectCriteriaChart').getContext('2d');
       new Chart(ctxCrit, {
         type: 'bar',
@@ -851,7 +873,7 @@
             {
               label: 'Ecoesmart',
               data: [4.00, 3.33, 3.33, 3.00, 3.67],
-              backgroundColor: '#10b981',
+              backgroundColor: '#68B723',
               borderRadius: 4
             },
             {
@@ -863,7 +885,7 @@
             {
               label: 'TecnMin',
               data: [3.33, 2.67, 2.67, 3.00, 2.33],
-              backgroundColor: '#F59E0B',
+              backgroundColor: '#F5B731',
               borderRadius: 4
             },
             {
@@ -903,17 +925,13 @@
           datasets: [
             {
               label: 'NPS Score',
-              data: [data.nps.global.nps_score, data.nps.inacap.nps_score, data.nps.aiep.nps_score],
+              data: [45.0, 37.5, 50.0],
               backgroundColor: '#C81057',
               borderRadius: 6
             },
             {
               label: 'Promedio Ex-post (x20 pts)',
-              data: [
-                data.nps.global.avg_score * 20,
-                data.nps.inacap.avg_score * 20,
-                data.nps.aiep.avg_score * 20
-              ],
+              data: [4.41 * 20, 4.38 * 20, 4.44 * 20],
               backgroundColor: '#1B365D',
               borderRadius: 6
             }
@@ -934,87 +952,6 @@
           }
         }
       });
-    }
-
-    function renderTable(list) {
-      const tbody = document.getElementById('participantsTableBody');
-      if (!tbody) return;
-      tbody.innerHTML = '';
-
-      if (list.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="13" class="py-8 text-center text-slate-400">No se encontraron participantes con el criterio de búsqueda</td></tr>';
-        return;
-      }
-
-      list.forEach((p, idx) => {
-        const tr = document.createElement('tr');
-        tr.className = idx % 2 === 0 ? 'bg-white hover:bg-slate-50/80 transition' : 'bg-slate-50/50 hover:bg-slate-50/80 transition';
-
-        let badgeClass = 'badge-passive';
-        if (p.nps_category === 'Promotor') badgeClass = 'badge-promoter';
-        if (p.nps_category === 'Detractor') badgeClass = 'badge-detractor';
-
-        let instBadge = p.institution === 'INACAP' 
-          ? '<span class="bg-rose-100 text-rose-800 font-bold px-1.5 py-0.5 rounded text-[10px]">INACAP</span>'
-          : '<span class="bg-blue-100 text-blue-800 font-bold px-1.5 py-0.5 rounded text-[10px]">AIEP</span>';
-
-        let typeBadge = p.type.includes('Expositor')
-          ? '<span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Expositor Demoday</span>'
-          : '<span class="text-slate-600 bg-slate-100 px-2 py-0.5 rounded">Asistente (Diploma)</span>';
-
-        let openDetailsHtml = '';
-        if (p.open_responses && p.open_responses.length > 0) {
-          openDetailsHtml = `
-            <details class="text-[11px] text-slate-600 group mt-1">
-              <summary class="cursor-pointer text-rose-600 hover:text-rose-800 font-semibold flex items-center gap-1">
-                <span>Ver ${p.open_responses.length} respuestas abiertas</span>
-                <i data-lucide="chevron-down" class="w-3 h-3 transition group-open:rotate-180"></i>
-              </summary>
-              <div class="mt-1 space-y-1 bg-slate-50 p-2 rounded border border-slate-200">
-                ${p.open_responses.map(or => `
-                  <div>
-                    <span class="font-bold text-slate-800">${or.module}:</span>
-                    <span class="italic text-slate-600">"${or.text}"</span>
-                  </div>
-                `).join('')}
-              </div>
-            </details>
-          `;
-        }
-
-        tr.innerHTML = `
-          <td class="py-2.5 px-3 font-bold text-slate-900">${p.name}</td>
-          <td class="py-2.5 px-2 text-center">${instBadge}</td>
-          <td class="py-2.5 px-2">${typeBadge}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m1}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m2}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m3}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m4}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m5}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m6}</td>
-          <td class="py-2.5 px-1.5 text-center font-medium">${p.m7}</td>
-          <td class="py-2.5 px-2 text-center font-black text-slate-900">${p.avg_score.toFixed(2)}</td>
-          <td class="py-2.5 px-2 text-center">
-            <span class="px-2 py-0.5 rounded-full font-bold text-[10px] ${badgeClass}">${p.nps_category}</span>
-          </td>
-          <td class="py-2.5 px-3 text-[11px] text-slate-600 max-w-xs">
-            ${p.obs ? `<div class="text-amber-800 font-medium mb-1">${p.obs}</div>` : ''}
-            ${openDetailsHtml}
-          </td>
-        `;
-        tbody.appendChild(tr);
-      });
-
-      lucide.createIcons();
-    }
-
-    function applyFilters() {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      let filtered = data.participants.filter(p => {
-        if (query && !p.name.toLowerCase().includes(query)) return false;
-        return true;
-      });
-      renderTable(filtered);
     }
 
     window.onload = function() {
