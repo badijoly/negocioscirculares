@@ -1,0 +1,935 @@
+{
+  "project": {
+    "title": "Programa de Negocios Digitales y Circulares para El Loa 2026",
+    "subtitle": "Panel Integral de Métricas, Transferencia Cognitiva, NPS y Evaluación de Proyectos",
+    "fund": "Fondo Viraliza Corfo - Código 25VIRTL-307464",
+    "institutions": [
+      "AIEP Calama",
+      "INACAP Sede Calama"
+    ],
+    "period": "Mayo - Noviembre 2026",
+    "location": "Calama, Región de Antofagasta, Chile",
+    "sheet_url": "https://docs.google.com/spreadsheets/d/11WuFrvQDqUyUOGWH9VXCKtdoiFUVeoQOnhZTgswcXLU/edit?usp=drivesdk"
+  },
+  "kpis": {
+    "total_unique_participants": 44,
+    "certified_students": 20,
+    "certification_rate": 100.0,
+    "exhibitors_count": 11,
+    "diploma_only_count": 9,
+    "featured_projects_count": 4,
+    "nps_score": 15.0,
+    "promoters_pct": 35.0,
+    "passives_pct": 45.0,
+    "detractors_pct": 20.0,
+    "avg_exante": 2.42,
+    "avg_expost": 4.24,
+    "delta_gain": 1.82,
+    "delta_pct": 75.0
+  },
+  "nps": {
+    "global": {
+      "total": 20,
+      "promoters": 7,
+      "passives": 9,
+      "detractors": 4,
+      "nps_score": 15.0,
+      "promoters_pct": 35.0,
+      "passives_pct": 45.0,
+      "detractors_pct": 20.0,
+      "avg_score": 4.23
+    },
+    "inacap": {
+      "total": 8,
+      "promoters": 3,
+      "passives": 3,
+      "detractors": 2,
+      "nps_score": 12.5,
+      "promoters_pct": 37.5,
+      "passives_pct": 37.5,
+      "detractors_pct": 25.0,
+      "avg_score": 4.27
+    },
+    "aiep": {
+      "total": 12,
+      "promoters": 4,
+      "passives": 6,
+      "detractors": 2,
+      "nps_score": 16.7,
+      "promoters_pct": 33.3,
+      "passives_pct": 50.0,
+      "detractors_pct": 16.7,
+      "avg_score": 4.21
+    },
+    "expositores": {
+      "total": 11,
+      "promoters": 4,
+      "passives": 4,
+      "detractors": 3,
+      "nps_score": 9.1,
+      "promoters_pct": 36.4,
+      "passives_pct": 36.4,
+      "detractors_pct": 27.3,
+      "avg_score": 4.26
+    },
+    "diplomas": {
+      "total": 9,
+      "promoters": 3,
+      "passives": 5,
+      "detractors": 1,
+      "nps_score": 22.2,
+      "promoters_pct": 33.3,
+      "passives_pct": 55.6,
+      "detractors_pct": 11.1,
+      "avg_score": 4.2
+    }
+  },
+  "modules_delta": [
+    {
+      "module": "Innovación Sostenible",
+      "ex_ante": 2.55,
+      "ex_post": 4.35,
+      "delta": 1.8,
+      "pct_gain": 70.6
+    },
+    {
+      "module": "Diseño de Negocio Sostenible",
+      "ex_ante": 2.84,
+      "ex_post": 4.32,
+      "delta": 1.48,
+      "pct_gain": 52.1
+    },
+    {
+      "module": "Herramientas Digitales",
+      "ex_ante": 2.26,
+      "ex_post": 4.55,
+      "delta": 2.29,
+      "pct_gain": 101.3
+    },
+    {
+      "module": "Modelos Circulares",
+      "ex_ante": 1.97,
+      "ex_post": 3.75,
+      "delta": 1.78,
+      "pct_gain": 90.4
+    },
+    {
+      "module": "Liderazgo Verde",
+      "ex_ante": 2.48,
+      "ex_post": 4.26,
+      "delta": 1.78,
+      "pct_gain": 71.8
+    },
+    {
+      "module": "Tendencias Tecnológicas",
+      "ex_ante": 2.42,
+      "ex_post": 3.84,
+      "delta": 1.42,
+      "pct_gain": 58.7
+    },
+    {
+      "module": "Comunicación / Pitch",
+      "ex_ante": 2.45,
+      "ex_post": 4.62,
+      "delta": 2.17,
+      "pct_gain": 88.6
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ecoesmart",
+      "avg_score": 17.33,
+      "max_score": 25,
+      "pct_score": 69.3,
+      "tag": "1er Lugar Compartido (Empate Técnico)",
+      "incentive": "Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado",
+      "team": "Felipe Vergara, Cristian Salfate, Lorens Barboza (INACAP)",
+      "pitch": "Sistema de reciclaje incentivado y trazabilidad digital de botellas PET con sensores y recompensas (Redimir/Reciclaz).",
+      "strengths": "Presentación de prototipo MVP funcional, excelente construcción de solución, diseño orientado a ODS y oratoria sólida.",
+      "evaluations": [
+        {
+          "juror": "Rodrigo Mérida",
+          "score": 18,
+          "comment": "Felicitaciones pensaron en toda la trayectoria del reciclaje e incentivar a las personas "
+        },
+        {
+          "juror": "Cecilia Martínez",
+          "score": 18,
+          "comment": "Mejorar la propuesta para llegar a más personas y plantiar con cuantos basureros partiran , muy bueno que lo quieren llevar lejos pero como?  "
+        },
+        {
+          "juror": "Valentina Muñoz",
+          "score": 16,
+          "comment": "- Excelente oratoria, recomiendo que utilicen la presentación como una especie de ayuda-memoria: no es sólo para el público, sino también para que ustedes recuerden lo que quieren decir en cada parte de la presentación. No es necesario recordar de memoria exactamente cada palabra del guión: lo importante es explicarlo en sus propias palabras. Ustedes son los mejores expertos de su propio proyecto ;)\n- El equipo destacó muchísimo con esa presentación de prototipo, excelente construcción y diseño de la solución, gran avance para ser un MVP (producto mínimo viable).\n- Muy buena incorporación de la metodología de proyecto orientado a ODS!"
+        }
+      ]
+    },
+    {
+      "name": "Recompost",
+      "avg_score": 17.33,
+      "max_score": 25,
+      "pct_score": 69.3,
+      "tag": "1er Lugar Compartido (Empate Técnico)",
+      "incentive": "Incentivo a Proyecto Destacado - Fase de Aceleración / Prototipado",
+      "team": "Carlos Olave Godoy, Mariana Zambrana, Jair Rodriguez (INACAP)",
+      "pitch": "Red de compostaje comunal con contenedores inteligentes asistidos por IA y gamificación en Calama.",
+      "strengths": "Excelente energía expositiva, potencial alto de escalabilidad comunal y aprovechamiento de residuos orgánicos urbanos.",
+      "evaluations": [
+        {
+          "juror": "Cecilia Martínez",
+          "score": 18,
+          "comment": "Muy buena presentación, explicaron muy bien solo mejorar la explicación de como funcionará la idea lo que se ocupará para  crearlo y el costo , pensar en el siguiente paso tambien "
+        },
+        {
+          "juror": "Valentina Muñoz",
+          "score": 18,
+          "comment": "- Excelente oratoria y energía durante toda la presentación.\n- ¿Cuántos basureros hay en Calama? ¿Cuánto saldría implementar su propuesta tecnologógica en la comuna o cómo lo gestionarían? Es una excelente idea con mucho potencial de escalabilidad si logran aumentar la factivibilidad. ¡Felicidades!"
+        },
+        {
+          "juror": "Rodrigo Mérida",
+          "score": 16,
+          "comment": "Deben conectarse con otras organizaciones para mejorar el ciclo del proyecto que se hará con el compost."
+        }
+      ]
+    },
+    {
+      "name": "TecnMin",
+      "avg_score": 14.0,
+      "max_score": 25,
+      "pct_score": 56.0,
+      "tag": "Proyecto Destacado",
+      "incentive": "Incentivo a Proyecto Destacado - Reconocimiento Innovación Territorial",
+      "team": "Joaquin Yufla Anza y equipo (INACAP)",
+      "pitch": "Integración de tecnologías habilitantes, IoT y descarbonización para faenas y proveedores mineros en El Loa.",
+      "strengths": "Foco en la industria tractora regional (minería) y solución directa a brechas de formación y digitalización industrial.",
+      "evaluations": [
+        {
+          "juror": "Valentina Muñoz",
+          "score": 14,
+          "comment": "- El gráfico de barras presentado al inicio no se explicó muy bien, a veces es mejor no mencionar porcentajes exactos mientras se comprenda bien lo que significan. Ejemplo: la mayorí se sintió medianamente preparado (3 de 5)."
+        },
+        {
+          "juror": "Cecilia Martínez",
+          "score": 15,
+          "comment": "Explicar mejor el problema, la encuesta no fueron bien explicado, la solución no quedó bien clara, en la presentación, confiar más en lo que en su proyecto "
+        }
+      ]
+    },
+    {
+      "name": "Calama se reconstruye",
+      "avg_score": 13.67,
+      "max_score": 25,
+      "pct_score": 54.7,
+      "tag": "Proyecto Destacado",
+      "incentive": "Incentivo a Proyecto Destacado - Reconocimiento Circularidad Comunitaria",
+      "team": "Lucy Tinte Reyes, Yoset Manacá, Ingri Gahona (AIEP)",
+      "pitch": "Fabricación y rescate de mobiliario urbano sostenible a partir de residuos recuperados en la comuna.",
+      "strengths": "Gran enfoque territorial, rescate de materiales locales y rápida respuesta del equipo ante preguntas del jurado.",
+      "evaluations": [
+        {
+          "juror": "Cecilia Martínez",
+          "score": 17,
+          "comment": "Muy buena presentación, me gusto mucho la Solución pero me falto entender como los cremas si manadarna a hacer los muebles o ustedes mismas realizarán los muebles "
+        },
+        {
+          "juror": "Valentina Muñoz",
+          "score": 9,
+          "comment": "- Inconsistencia de los datos duros (dijeron 4000 toneladas por recuperar pero la ppt decía 240).\n- La segunda chica retomó muy bien, hay que saber confiar en el equipo y apañarse cuando es necesario <3 Para la otra quizá reaccionar un poco más rápido, pero es cosa de práctica!\n- Buen enfoque territorial ;)"
+        },
+        {
+          "juror": "Rodrigo Mérida",
+          "score": 15,
+          "comment": "Es valioso que puedan explorar aquellos lugares y espacios específicos para poder producir "
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "name": "Felipe Vergara C.",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 4.43,
+      "nps_category": "Pasivo",
+      "m1": 5,
+      "m2": 4,
+      "m3": 5,
+      "m4": 4,
+      "m5": 4,
+      "m6": 4,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "Entender mejor la economia circular y sostenibilidad"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "4.0",
+          "text": "Si, en nuestro proyecto ataca directamente la producción de Plasticos Pet, Reutilizandolos y dando una segunda vida"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "las mas destacadas es IA y Marketing"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "4.0",
+          "text": "Si, en nuestro caso Reciclaz y redimir"
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "4.0",
+          "text": "Si, se habla muy poco de economia circular"
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "4.0",
+          "text": "el uso de las distintas herramientas nos ayudan a encontrar soluciones a problemas espesificos"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "Si, todos los libro entregados y asistidos por el agente de IA"
+        }
+      ],
+      "obs": "Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Cristian Salfate",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 3.17,
+      "nps_category": "Detractor",
+      "m1": 4,
+      "m2": "-",
+      "m3": 4,
+      "m4": 3,
+      "m5": 2,
+      "m6": 2,
+      "m7": 4,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "4.0",
+          "text": "Tema reciclaje fue fundamental, por podere comocer una realidad de la ciudad y como podemos enfrentarla"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "nan",
+          "text": "Si el agua y medición de incorporan y controlan los Residuos"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "4.0",
+          "text": "Automatización y E-comerce son Fundamentales para construir nuevos proyectos al igual que medir"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "3.0",
+          "text": "Redimir y reciclaz"
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "2.0",
+          "text": "Brechas o desconocimientos."
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "2.0",
+          "text": "no sabria decir cual"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "4.0",
+          "text": "Datos relevantes sobre ciudades mas contaminadas"
+        }
+      ],
+      "obs": "M2 Diseño de Negocio: casilla de escala sin marcar (dejada en blanco), aunque escribió respuesta cualitativa. M1 corrigió de 2 a 4."
+    },
+    {
+      "name": "Lorens Barboza",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 4.0,
+      "nps_category": "Pasivo",
+      "m1": 4,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 3,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "4.0",
+          "text": "Si, me gusto mucho el tema sostenible"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "4.0",
+          "text": "Si logramos identificar cuanta basura se desperdicia"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "4.0",
+          "text": "la IA"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "4.0",
+          "text": "Reciclado y redimir."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "4.0",
+          "text": "las personas tienden a generar mucha basura y no recicla."
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "3.0",
+          "text": "La inteligencia artificial"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "Datos de contaminacion en la ciudad"
+        }
+      ],
+      "obs": "Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Carlos Olave Godoy",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 3.71,
+      "nps_category": "Detractor",
+      "m1": 4,
+      "m2": 3,
+      "m3": 5,
+      "m4": 2,
+      "m5": 5,
+      "m6": 2,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "4.0",
+          "text": "La emseñanza sobre la Inteligencia Artificial Influyo en mi propuesta para el diseño del contenedor Inteligente"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "3.0",
+          "text": "Una buena enseñanza sobre los temas de sostenibilidad aunque no se Incorporo mucho en el proyecto"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "Todas la herramientas permiten integrar a"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "2.0",
+          "text": "No ser reconocer, pero se buscaría en las fundaciones ecologicas."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "5.0",
+          "text": "La mayoría de la comunidad no estan concientes de como reciclar."
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "2.0",
+          "text": "si, en especifico tecnologias que ayudan a reducir la contaminacion"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "La necesidad de Implementar el compostaje a la comunidad"
+        }
+      ],
+      "obs": "Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Jair Rodriguez Lima",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 4.14,
+      "nps_category": "Pasivo",
+      "m1": 5,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 3,
+      "m6": 4,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "Si me gusto mucho y aprendi mucho."
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "4.0",
+          "text": "Si logramos incorporar todo lo aprendido."
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "4.0",
+          "text": "Si reconosco que aprendi y conosco los consepto y actores"
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "3.0",
+          "text": "Si y implemetamos los cambios"
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "4.0",
+          "text": "Si como el uso de la Ia."
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "Si use."
+        }
+      ],
+      "obs": "M3 Herramientas Digitales: respuesta abierta dejada en blanco (escala marcada en 4)."
+    },
+    {
+      "name": "Lucy W. Tinte Reyes",
+      "institution": "AIEP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 5.0,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 5,
+      "m5": 5,
+      "m6": 5,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "Sostenibilidad, buscando buenas propuestas."
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "5.0",
+          "text": "Energía."
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "Con IA"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "5.0",
+          "text": "En la naturaleza."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "5.0",
+          "text": "Si, cambio educacional"
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "5.0",
+          "text": "Impulsar mi carrera hacia el futuro"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "Buenísimos pitches"
+        }
+      ],
+      "obs": "Expositora AIEP. Instrumento completo con todas las escalas en puntaje máximo (5)."
+    },
+    {
+      "name": "Joaquin Israel Santiago Yufla Anza",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 4.71,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 3,
+      "m3": 5,
+      "m4": 5,
+      "m5": 5,
+      "m6": 5,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "Brechas entre la formación y el mundo idustrial"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "3.0",
+          "text": "Incorpore otros indicadores como la Calidad de Proyectos y Sostenibles"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "no, estas tecnologias son Relevantes, pero cada dia surgen herramientas más o mejores que el de ayer."
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "5.0",
+          "text": "Si, con los contenidos vistos, logro identificar con mas claridad los modelos de negocio."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "5.0",
+          "text": "Si, en calama existen diversas barreras lo cual son una oportu-nidad"
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "5.0",
+          "text": "La tecnologia es una herramienta y donde logra impulsar Proyectos u otras tecnologias."
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "5.0",
+          "text": "Si, encuestas de estudios y estudios propios en inacap."
+        }
+      ],
+      "obs": "Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Mary Morales Chaira",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 5.0,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 5,
+      "m5": "-",
+      "m6": "-",
+      "m7": "-",
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "en el Loa existe escasez de agua, el cuidado del medio ambiente y el uso responsable de los recursos."
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "5.0",
+          "text": "Si, incorpore la importancia de crear ahorrar el agua y energia, reducir los reciduos y aprobechar mejor los materiales"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "Las plantillas de excel y las plataforma de venta de internet"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "5.0",
+          "text": "El Loa lo puede relacionar con empresas mineras, agricultores, recicladore y pequeños empresarios."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "nan",
+          "text": "Es la falta de información y de habitos de cuidado ambiental."
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "nan",
+          "text": "reducir la contaminacion, nos permite ahorrar los recursos"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "nan",
+          "text": "el ahorro de recursos y los beneficios que pueden entregar mi propuesta a la comunidad"
+        }
+      ],
+      "obs": "M5, M6 y M7: casillas de escala numérica dejadas sin marcar (en blanco), pero escribió respuestas abiertas completas."
+    },
+    {
+      "name": "Mariana Zambrana Mamani",
+      "institution": "INACAP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 5.0,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 5,
+      "m5": 5,
+      "m6": 5,
+      "m7": 5,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "5.0",
+          "text": "Se detecto sobre la contaminacion que hay dentro de la comuna, y al escuchar otras ideas se puede observar el cambio que se podria realizar."
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "5.0",
+          "text": "la toneladas en base a porcentajes de la municipalidad de calama, con estadisticas"
+        }
+      ],
+      "obs": "M1 y M2 con respuestas abiertas y cerradas en 5; M3 a M7 con escala marcada en 5 pero respuestas abiertas dejadas en blanco."
+    },
+    {
+      "name": "Yoset Manacá Díaz",
+      "institution": "AIEP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 4.14,
+      "nps_category": "Pasivo",
+      "m1": 4,
+      "m2": 5,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 4,
+      "m7": 4,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "4.0",
+          "text": "Si, el desafio de reciclar las botellas plasticas para lograr darles nueva vida"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "5.0",
+          "text": "la huella de carbono"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "4.0",
+          "text": "la trazabilidad en los estados del producto"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "4.0",
+          "text": "Investigarlos."
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "4.0",
+          "text": "aun hay muchas barreras en el entorno en general propondria hablar con el municipio para concientizar a la comuna a reciclar mucho más"
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "4.0",
+          "text": "no sabria pero si me gustaria saber más"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "4.0",
+          "text": "Si, la cantidad de plastico Pet que hay"
+        }
+      ],
+      "obs": "Expositora AIEP. Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Ingri Gahona Collao",
+      "institution": "AIEP",
+      "type": "Expositor (Proceso Completo + Pitch)",
+      "avg_score": 3.57,
+      "nps_category": "Detractor",
+      "m1": 4,
+      "m2": 4,
+      "m3": 5,
+      "m4": 3,
+      "m5": 3,
+      "m6": 3,
+      "m7": 3,
+      "open_responses": [
+        {
+          "module": "M1. Innovación Sost.",
+          "score": "4.0",
+          "text": "ABORDAR LA PROBLEMATICA LOCAL"
+        },
+        {
+          "module": "M2. Diseño Negocio Sost.",
+          "score": "4.0",
+          "text": "LAS EMISIONES RO2 (CO2)"
+        },
+        {
+          "module": "M3. Herramientas Digitales",
+          "score": "5.0",
+          "text": "TRAZABILIDAD EN EL ESTADO DEL PRODUCTO"
+        },
+        {
+          "module": "M4. Modelos Circulares",
+          "score": "3.0",
+          "text": "BUSCARLO A TRAVES DE INVESTIGACION"
+        },
+        {
+          "module": "M5. Liderazgo Verde",
+          "score": "3.0",
+          "text": "SI SE DISPUNIERA MAS RECURSOS SE DERRUMBARIA LA BARRERA CULTURAL."
+        },
+        {
+          "module": "M6. Tendencias Tecnológicas",
+          "score": "3.0",
+          "text": "ME GUSTARIA CONOCER MAS TECNOLOGIA"
+        },
+        {
+          "module": "M7. Pitch Day",
+          "score": "3.0",
+          "text": "SI LA CANTIDAD DE DESECHO PLASTICO PET"
+        }
+      ],
+      "obs": "Expositora AIEP. Instrumento completo con respuestas abiertas y cerradas."
+    },
+    {
+      "name": "Anghy Neira",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.5,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 3,
+      "m5": 5,
+      "m6": 4,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Dana L. Alquez Villca",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.83,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 4,
+      "m5": 5,
+      "m6": 5,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Axel Gaete",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.0,
+      "nps_category": "Pasivo",
+      "m1": 4,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 4,
+      "m7": 4,
+      "open_responses": [],
+      "obs": "Marcó todas las casillas cerradas en 4 (incluido M7 Pitch Day). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Joice Vizcarra Godoy",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.17,
+      "nps_category": "Pasivo",
+      "m1": 4,
+      "m2": 4,
+      "m3": 5,
+      "m4": 3,
+      "m5": 5,
+      "m6": 4,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Luis Diego Misericordia León",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 3.83,
+      "nps_category": "Pasivo",
+      "m1": 4,
+      "m2": 4,
+      "m3": 3,
+      "m4": 3,
+      "m5": 5,
+      "m6": 4,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M6 marcado con X en 4 con línea tenue en 5 (revisar manual). M7 sin marcar."
+    },
+    {
+      "name": "Karla Cadima Rodríguez",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.33,
+      "nps_category": "Pasivo",
+      "m1": 5,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 5,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Nayeli Quispe Rojas",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 3.83,
+      "nps_category": "Pasivo",
+      "m1": 3,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 4,
+      "m7": "-",
+      "open_responses": [],
+      "obs": "M7 Pitch Day sin marcar (no expositora). Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "María Luz Torres Ojeda",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 4.86,
+      "nps_category": "Promotor",
+      "m1": 5,
+      "m2": 5,
+      "m3": 5,
+      "m4": 4,
+      "m5": 5,
+      "m6": 5,
+      "m7": 5,
+      "open_responses": [],
+      "obs": "Marcó todas las casillas en 5 (M4 en 4), incluido M7. Respuestas abiertas no requeridas."
+    },
+    {
+      "name": "Kiara Martinic",
+      "institution": "AIEP",
+      "type": "Finalista (Sólo Diploma)",
+      "avg_score": 3.43,
+      "nps_category": "Detractor",
+      "m1": 2,
+      "m2": 5,
+      "m3": 5,
+      "m4": 2,
+      "m5": 4,
+      "m6": 1,
+      "m7": 5,
+      "open_responses": [],
+      "obs": "Marcó M7 en 5. Presenta variabilidad marcada (M6=1, M1=2, M4=2, M2=5, M3=5, M7=5)."
+    }
+  ]
+}
