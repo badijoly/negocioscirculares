@@ -1014,9 +1014,12 @@
         const tr = document.createElement('tr');
         tr.className = idx % 2 === 0 ? 'bg-white hover:bg-slate-50 transition' : 'bg-[#FAF8F5] hover:bg-slate-50 transition';
 
-        let badgeClass = 'badge-passive';
-        if (p.nps === 'Promotor') badgeClass = 'badge-promoter';
-        if (p.nps === 'Detractor') badgeClass = 'badge-detractor';
+        let npsCell = '';
+        if (p.nps === 'Promotor') {
+          npsCell = `<span class="px-2 py-0.5 rounded-full font-bold text-[10px] badge-promoter">Promotor</span>`;
+        } else {
+          npsCell = `<span class="text-slate-300 text-xs font-bold">-</span>`;
+        }
 
         let instBadge = p.inst === 'INACAP' 
           ? '<span class="bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded text-[10px]">INACAP</span>'
@@ -1039,7 +1042,7 @@
           <td class="py-2.5 px-1.5 text-center font-medium">${p.m7}</td>
           <td class="py-2.5 px-2 text-center font-black text-slate-900">${typeof p.avg === 'number' ? p.avg.toFixed(2) : p.avg}</td>
           <td class="py-2.5 px-2 text-center">
-            <span class="px-2 py-0.5 rounded-full font-bold text-[10px] ${badgeClass}">${p.nps}</span>
+            ${npsCell}
           </td>
           <td class="py-2.5 px-3 text-[11px] text-slate-600 max-w-xs">${p.obs}</td>
         `;
